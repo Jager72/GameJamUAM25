@@ -5,6 +5,9 @@ public class PlatformerPlayerControll : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckRadius = 0.1f;
+    [SerializeField] private LayerMask groundLayer;
     
     private Rigidbody2D rb;
     private float moveInput;
@@ -21,6 +24,7 @@ public class PlatformerPlayerControll : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
     
     // Called by the Input System's PlayerInput component
@@ -39,6 +43,12 @@ public class PlatformerPlayerControll : MonoBehaviour
         }
     }
     
-    // Collision detection methods
-    
+    void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+    }
 }
