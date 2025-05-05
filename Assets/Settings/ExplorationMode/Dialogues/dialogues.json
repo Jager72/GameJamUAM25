@@ -1,0 +1,32 @@
+{
+    "dialogues": [
+      {
+        "id": "prolog",
+        "background": "temp1",     
+        "nextScene": "",               
+        "lines": [
+          {
+            "speaker": "Alice",
+            "text": "Witaj w naszej grze!",
+            "sprite": "Syska",
+            "background": ""           
+          },
+          {
+            "speaker": "Ty",
+            "text": "Co tu się dzieje?",
+            "sprite": "gierek",
+            "background": "temp2"  
+          }
+        ]
+      },
+      {
+        "id": "koniec_prologu",
+        "background": "castle_gate",
+        "nextScene": "MainGameplay",   
+        "lines": [
+          { "speaker": "Narrator", "text": "I tak zaczyna się przygoda...", "sprite": "", "background": "" }
+        ]
+      }
+    ]
+  }
+  

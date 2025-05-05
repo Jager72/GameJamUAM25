@@ -1,0 +1,84 @@
+{
+  "dialogues": [
+    {
+      "id": "prolog",
+      "background": "temp1",
+      "nextScene": "",
+      "lines": [
+        {
+          "speaker": "Alice",
+          "text": "Witaj w naszej grze. Zostałeś przydzielony do sesji inicjalizacji systemu narracyjnego.",
+          "sprite": "Syska",
+          "background": ""
+        },
+        {
+          "speaker": "Ty",
+          "text": "Towarzyszko, powiedzcie mi proszę — co tu się właściwie wyprawia?",
+          "sprite": "gierek",
+          "background": "temp2"
+        },
+        {
+          "speaker": "Alice",
+          "text": "Twoje zapytanie zostało zarejestrowane. W tej symulacji pełnię funkcję operatora przekazującego dane fabularne.",
+          "sprite": "Syska",
+          "background": ""
+        },
+        {
+          "speaker": "Ty",
+          "text": "A więc wszystko odbywa się planowo, według ustaleń kolektywu? To dobrze, bardzo dobrze. Porządek musi być.",
+          "sprite": "gierek",
+          "background": "temp2"
+        },
+        {
+          "speaker": "Alice",
+          "text": "Protokół narracyjny zakłada dynamiczne przejścia sceniczne. Jeśli jesteś gotów, rozpoczniemy fazę rozruchu świata gry.",
+          "sprite": "Syska",
+          "background": ""
+        },
+        {
+          "speaker": "Ty",
+          "text": "Jestem gotów. Dzięki wspólnemu wysiłkowi osiągniemy cele, które przed nami stoją!",
+          "sprite": "gierek",
+          "background": "temp2"
+        },
+        {
+          "speaker": "Alice",
+          "text": "Inicjalizuję przesunięcie do kolejnego segmentu. Pamiętaj: integralność twoich decyzji będzie miała wpływ na system docelowy.",
+          "sprite": "Syska",
+          "background": ""
+        },
+        {
+          "speaker": "Niezidentyfikowany Głos",
+          "text": "System zarejestrował obecność obserwatora zewnętrznego...",
+          "sprite": "",
+          "background": "temp3"
+        }
+      ]
+    },
+    {
+      "id": "koniec_prologu",
+      "background": "castle_gate",
+      "nextScene": "MainGameplay",
+      "lines": [
+        {
+          "speaker": "Narrator",
+          "text": "I tak zaczyna się przygoda, pełna zagadek i niebezpieczeństw, która pochłonie każdego, kto odważy się przekroczyć próg zamkowych murów.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Ty",
+          "text": "Z takim zaangażowaniem ludu pracującego miast i wsi nie może się nie udać. Do dzieła!",
+          "sprite": "gierek",
+          "background": "castle_gate"
+        },
+        {
+          "speaker": "Alice",
+          "text": "Sesja wprowadzająca została zakończona. Oczekuj danych wejściowych z warstwy rozgrywki zasadniczej.",
+          "sprite": "Syska",
+          "background": "castle_gate"
+        }
+      ]
+    }
+  ]
+}
