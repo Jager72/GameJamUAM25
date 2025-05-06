@@ -10,58 +10,67 @@ public class Projectile : MonoBehaviour
     [SerializeField, Range(0f, 360f)] private float angleDegrees = 0f;
 
     [Header("Spawn Animation Settings")]
-    [Tooltip("Name of the Animator trigger to play on spawn.")]
+    [Tooltip("Animator Trigger to play on spawn.")]
     [SerializeField] private string spawnTrigger = "Spawn";
-    [Tooltip("Name of the Animator trigger to switch to flight.")]
+    [Tooltip("Animator Trigger to switch to flight.")]
     [SerializeField] private string flyTrigger = "Fly";
-    [Tooltip("How long (seconds) the spawn animation takes.")]
+    [Tooltip("Duration of the spawn animation (seconds).")]
     [SerializeField] private float spawnDuration = 0.5f;
 
     [Header("Damage Settings")]
+    [Tooltip("Damage dealt to the player on hit.")]
     [SerializeField] private int damage = 1;
+    [Tooltip("Tag of the player GameObject.")]
     [SerializeField] private string playerTag = "Player";
 
+    [Header("Explosion Settings")]
+    [Tooltip("Animator Trigger to play on impact.")]
+    [SerializeField] private string explodeTrigger = "Explode";
+    [Tooltip("Duration of the explosion animation (seconds).")]
+    [SerializeField] private float explodeDuration = 0.3f;
+
+    // cached components
     private BoxCollider2D boxCollider;
     private Rigidbody2D rb;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
+    // runtime state
     private Vector2 direction;
     private float timer;
-    private bool hasHit;
-    private bool canMove;
+    private bool canMove = false;
+    private bool hasHit = false;
 
     void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
+        // Kinematic so we control it directly
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.simulated = true;
         rb.useFullKinematicContacts = true;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
 
+        // Trigger collider
         boxCollider.isTrigger = true;
     }
 
     void Start()
     {
-        // compute facing direction
+        // Calculate direction & set facing
         float rad = angleDegrees * Mathf.Deg2Rad;
         direction = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
         transform.rotation = Quaternion.Euler(0f, 0f, angleDegrees);
 
-        // 1) Don't move yet
+        // Play spawn animation, then enable movement
         canMove = false;
-
-        // 2) Play spawn animation
         if (animator != null && !string.IsNullOrEmpty(spawnTrigger))
             animator.SetTrigger(spawnTrigger);
 
-        // 3) After its duration, allow movement and switch to flight anim
         StartCoroutine(EnableMovementAfterSpawn());
-
-        // init lifetime timer
         timer = 0f;
     }
 
@@ -69,6 +78,7 @@ public class Projectile : MonoBehaviour
     {
         yield return new WaitForSeconds(spawnDuration);
 
+        // Switch to flying loop
         canMove = true;
         if (animator != null && !string.IsNullOrEmpty(flyTrigger))
             animator.SetTrigger(flyTrigger);
@@ -76,12 +86,10 @@ public class Projectile : MonoBehaviour
 
     void Update()
     {
-        if (hasHit) return;
+        if (!canMove || hasHit)
+            return;
 
-        // only start moving once spawn anim has played out
-        if (!canMove) return;
-
-        // handle lifetime
+        // Lifetime check
         timer += Time.deltaTime;
         if (timer > lifetime)
         {
@@ -89,15 +97,16 @@ public class Projectile : MonoBehaviour
             return;
         }
 
-        // move forward in local “up”
+        // Travel forward along local “up”
         transform.Translate(Vector3.up * speed * Time.deltaTime, Space.Self);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (hasHit) return;
-        if (!other.CompareTag(playerTag)) return;
+        if (hasHit || !other.CompareTag(playerTag))
+            return;
 
+        // Deal damage
         var health = other.GetComponent<PlayerHealth>();
         if (health != null)
             health.TakeDamage(damage);
@@ -108,10 +117,23 @@ public class Projectile : MonoBehaviour
     private void HandleHit()
     {
         hasHit = true;
-        enabled = false;
+        canMove = false;
+
+        // Prevent further collisions
         boxCollider.enabled = false;
-        // you could play a hit/explosion trigger here
-        Invoke(nameof(DestroyProjectile), 0.2f);
+
+        // Play explode animation
+        if (animator != null && !string.IsNullOrEmpty(explodeTrigger))
+            animator.SetTrigger(explodeTrigger);
+
+        // Wait for the explosion clip then destroy
+        StartCoroutine(ExplodeAndDestroy());
+    }
+
+    private IEnumerator ExplodeAndDestroy()
+    {
+        yield return new WaitForSeconds(explodeDuration);
+        DestroyProjectile();
     }
 
     private void DestroyProjectile()
@@ -120,7 +142,7 @@ public class Projectile : MonoBehaviour
     }
 
     /// <summary>
-    /// If you need to change angle at runtime, update direction and transform
+    /// Update firing angle at runtime.
     /// </summary>
     public void SetAngle(float angle)
     {
@@ -130,6 +152,9 @@ public class Projectile : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, angleDegrees);
     }
 
+    /// <summary>
+    /// Update speed at runtime.
+    /// </summary>
     public void SetSpeed(float newSpeed)
     {
         speed = newSpeed;
