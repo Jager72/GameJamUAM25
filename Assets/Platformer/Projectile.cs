@@ -23,6 +23,7 @@ public class Projectile : MonoBehaviour
         angleDegrees = angle;
         float rad = angle * Mathf.Deg2Rad;
         direction = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
+        transform.rotation = Quaternion.Euler(0f, 0f, angleDegrees);
     }
 
     public void SetSpeed(float newSpeed)
@@ -40,6 +41,6 @@ public class Projectile : MonoBehaviour
             return;
         }
 
-        transform.Translate(direction * speed * Time.deltaTime);
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
 }
