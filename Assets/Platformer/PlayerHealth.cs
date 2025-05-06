@@ -1,5 +1,5 @@
+using System;
 using UnityEngine;
-
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,6 +10,9 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
+
+    // Expose a static event that listeners (like the spawner) can subscribe to.
+    public static event Action OnPlayerDead;
 
     void Awake()
     {
@@ -60,7 +63,7 @@ public class PlayerHealth : MonoBehaviour
     /// </summary>
     private void UpdateColor()
     {
-        float t = maxHealth > 0 ? (float)currentHealth / maxHealth : 0f;
+        float t = maxHealth >= 0 ? (float)currentHealth / maxHealth : 0f;
         // Lerp from red (0 health) to originalColor (full health)
         spriteRenderer.color = Color.Lerp(Color.red, originalColor, t);
     }
@@ -70,7 +73,8 @@ public class PlayerHealth : MonoBehaviour
     /// </summary>
     private void Die()
     {
-        // TODO: implement death behavior (e.g., disable controls, play animation, restart level)
+        ProjectileSpawner PS = FindAnyObjectByType<ProjectileSpawner>();
+        OnPlayerDead?.Invoke();
         Debug.Log("Player has died.");
     }
 }

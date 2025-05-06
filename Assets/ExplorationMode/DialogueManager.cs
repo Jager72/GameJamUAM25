@@ -20,6 +20,8 @@ public class DialogueManager : MonoBehaviour
     [Header("Choices UI")]
     public GameObject choicesPanel;         // the container for your choice buttons
     public Button choiceButtonPrefab;   // prefab with Button + a TMP_Text child
+    public GameObject BattleArenaGO;
+    public Image BattleArenaBackground;
 
     private DialogueLoader loader;
     private Dialogue currentDialogue;
@@ -27,11 +29,14 @@ public class DialogueManager : MonoBehaviour
     private bool isTyping, skipTyping;
     private Coroutine typingCoroutine;
 
+    //quickHack
+    DialogueLine curLine;
+
     void Start()
     {
         loader = FindAnyObjectByType<DialogueLoader>();
         dialoguePanel.SetActive(false);
-        StartDialogue("prolog");
+        StartDialogue("debug");
     }
 
     public void StartDialogue(string id)
@@ -83,7 +88,9 @@ public class DialogueManager : MonoBehaviour
         isTyping = true;
         skipTyping = false;
 
-        var line = currentDialogue.lines[currentIndex];
+        curLine = currentDialogue.lines[currentIndex];
+        var line = curLine;
+
         nameText.text = line.speaker;
         dialogueText.text = "";
 
@@ -150,7 +157,14 @@ public class DialogueManager : MonoBehaviour
     void OnChoiceSelected(string nextId)
     {
         Debug.Log($"[DialogueManager] Choice clicked, jumping to '{nextId}'");
-        StartDialogue(nextId);
+        if (!string.IsNullOrEmpty(curLine.battle))
+        {
+            DoBattle(curLine.battle);
+
+        } else
+        {
+            StartDialogue(nextId);
+        }
     }
 
     void EndDialogue()
@@ -162,7 +176,31 @@ public class DialogueManager : MonoBehaviour
         {
             SceneManager.LoadScene(currentDialogue.nextScene);
         }
-    } 
+    }
+
+    void DoBattle(string battle)
+    {
+        Debug.Log($"Doing Battle {battle}");
+        // 1) get the arena transform
+        choicesPanel.SetActive(false);
+        
+        Transform arenaT = BattleArenaGO.transform;
+
+        // 2) load the prefab by name
+        GameObject prefab = Resources.Load<GameObject>($"Scenes/{battle}");
+        Debug.Log($"Doing prefab1 {prefab}");
+
+        if (prefab == null)
+        {
+            Debug.LogError($"DoBattle: could not find prefab 'Scenes/{battle}' in Resources.");
+            return;
+        }
+        Debug.Log($"Doing finishing {prefab}");
+
+        // 3) instantiate at the arena’s position & rotation
+        BattleArenaBackground.gameObject.SetActive(true);
+        Instantiate(prefab, arenaT.position, arenaT.rotation);
+    }
 
     void Update()
     {

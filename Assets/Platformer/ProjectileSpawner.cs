@@ -17,6 +17,7 @@ public class SpawnData
 [System.Serializable]
 public class WaveData
 {
+    public float waveSpeedMultiplier = 1f;
     public SpawnData[] spawnPoints;
 }
 
@@ -30,10 +31,16 @@ public class ProjectileSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private string jsonFileName = "spawnData.json";
+    [SerializeField] private float speedMultiplier = 1f;
 
     private WaveData[] waves;
 
     private void Awake()
+    {
+        loadJson();
+    }
+
+    private void loadJson()
     {
         // load waves from JSON
         string path = Path.Combine(Application.streamingAssetsPath, jsonFileName);
@@ -59,6 +66,8 @@ public class ProjectileSpawner : MonoBehaviour
         if (Keyboard.current.leftCtrlKey.wasPressedThisFrame)
         {
             StopAllCoroutines();
+            loadJson();
+            Debug.Log("Reloading JSON data...");
             StartCoroutine(RunAllWaves());
         }
     }
@@ -70,21 +79,32 @@ public class ProjectileSpawner : MonoBehaviour
             Debug.Log($"Wave {i + 1}: Starting...");
             // Reset flag for this wave
             bool hitInWave = false;
+            bool diedInWave = false;
             // Subscribe to the Projectile event
             Action onHit = () => hitInWave = true;
+            Action onDead = () => diedInWave = true;
+
             Projectile.OnPlayerHit += onHit;
+            PlayerHealth.OnPlayerDead += onDead;
+            Debug.Log($"Wave {i + 1}: Waiting for {waves[i].spawnPoints.Length} projectiles to spawn... Speed multiplier: {waves[i].waveSpeedMultiplier}");
 
             // Spawn & wait for wave to finish
-            yield return StartCoroutine(SpawnWave(waves[i].spawnPoints));
+            yield return StartCoroutine(SpawnWave(waves[i].spawnPoints, waves[i].waveSpeedMultiplier));
 
             // Unsubscribe
             Projectile.OnPlayerHit -= onHit;
+            PlayerHealth.OnPlayerDead -= onDead;
 
-            // Log result
-            if (hitInWave)
+            if (diedInWave)
             {
-                i--;
+                i = -1;
+                Debug.Log($"Wave {i + 1}: Player has died! retrying...");
+                FindAnyObjectByType<PlayerHealth>().Heal(5);
+            }
+            else if (hitInWave)
+            {
                 Debug.Log($"Wave {i + 1}: Player was hit! retrying...");
+                i--;
             }
             else
             {
@@ -93,7 +113,7 @@ public class ProjectileSpawner : MonoBehaviour
         }
     }
 
-    private IEnumerator SpawnWave(SpawnData[] spawnPoints)
+    private IEnumerator SpawnWave(SpawnData[] spawnPoints, float waveSpeedMultiplier = 1f)
     {
         var holders = new List<GameObject>();
 
@@ -115,7 +135,7 @@ public class ProjectileSpawner : MonoBehaviour
             if (proj != null)
             {
                 proj.SetAngle(data.angleDegrees);
-                proj.SetSpeed(data.speed);
+                proj.SetSpeed(data.speed * speedMultiplier * waveSpeedMultiplier);
             }
 
             holders.Add(holder);
