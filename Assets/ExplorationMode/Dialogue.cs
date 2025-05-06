@@ -4,7 +4,7 @@ using System;
 public class Dialogue
 {
     public string id;
-    public string background;  // default background for this dialogue
-    public string nextScene;   // empty = no scene load
+    public string background;
+    public string nextScene;
     public DialogueLine[] lines;
 }

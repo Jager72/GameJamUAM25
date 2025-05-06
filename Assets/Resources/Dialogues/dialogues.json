@@ -1,84 +1,99 @@
 {
   "dialogues": [
     {
-      "id": "prolog",
+      "id": "ser_rozmowa",
       "background": "temp1",
       "nextScene": "",
       "lines": [
         {
           "speaker": "Alice",
-          "text": "Witaj w naszej grze. Zostałeś przydzielony do sesji inicjalizacji systemu narracyjnego.",
+          "text": "Gierek... czy ty kiedykolwiek... kochałeś?",
           "sprite": "Syska",
           "background": ""
         },
         {
           "speaker": "Ty",
-          "text": "Towarzyszko, powiedzcie mi proszę — co tu się właściwie wyprawia?",
+          "text": "Kochałem? Towarzyszko, ja kochałem... ser. Żółty. W plastrach. Na kartki.",
           "sprite": "gierek",
-          "background": "temp2"
+          "background": ""
         },
         {
           "speaker": "Alice",
-          "text": "Twoje zapytanie zostało zarejestrowane. W tej symulacji pełnię funkcję operatora przekazującego dane fabularne.",
+          "text": "To nie jest to samo. Miłość to zaufanie. Jak w protokole wymiany kluczy.",
           "sprite": "Syska",
           "background": ""
         },
         {
           "speaker": "Ty",
-          "text": "A więc wszystko odbywa się planowo, według ustaleń kolektywu? To dobrze, bardzo dobrze. Porządek musi być.",
+          "text": "Zaufanie buduje się latami, tak jak dojrzewa dobry edamski. A zdrada? To jak czarny rynek nabiału.",
           "sprite": "gierek",
-          "background": "temp2"
+          "background": ""
         },
         {
           "speaker": "Alice",
-          "text": "Protokół narracyjny zakłada dynamiczne przejścia sceniczne. Jeśli jesteś gotów, rozpoczniemy fazę rozruchu świata gry.",
+          "text": "Czyli... kochałeś ser tak, jak powinno się kochać człowieka?",
           "sprite": "Syska",
           "background": ""
         },
         {
           "speaker": "Ty",
-          "text": "Jestem gotów. Dzięki wspólnemu wysiłkowi osiągniemy cele, które przed nami stoją!",
+          "text": "Ser nie odchodzi. Nie pisze SMS-a, że wraca do Zachodu.",
           "sprite": "gierek",
-          "background": "temp2"
-        },
-        {
-          "speaker": "Alice",
-          "text": "Inicjalizuję przesunięcie do kolejnego segmentu. Pamiętaj: integralność twoich decyzji będzie miała wpływ na system docelowy.",
-          "sprite": "Syska",
           "background": ""
         },
         {
-          "speaker": "Niezidentyfikowany Głos",
-          "text": "System zarejestrował obecność obserwatora zewnętrznego...",
-          "sprite": "",
-          "background": "temp3"
+          "speaker": "Alice",
+          "text": "To smutne. Ale prawdziwe. Może... może my też jesteśmy jak dwa kawałki goudy w foliopaku?",
+          "sprite": "Syska",
+          "background": "",
+          "choices": [
+            { "text": "Powiedz, że kochasz", "nextId": "confess_love" },
+            { "text": "Powiedz, że masz tylko ser w sercu", "nextId": "cheese_only" }
+          ]
         }
       ]
     },
     {
-      "id": "koniec_prologu",
-      "background": "castle_gate",
-      "nextScene": "MainGameplay",
+      "id": "confess_love",
+      "background": "temp1",
+      "nextScene": "",
       "lines": [
         {
-          "speaker": "Narrator",
-          "text": "I tak zaczyna się przygoda, pełna zagadek i niebezpieczeństw, która pochłonie każdego, kto odważy się przekroczyć próg zamkowych murów.",
-          "sprite": "",
+          "speaker": "Ty",
+          "text": "Towarzyszko Alice... twoja logika jest jak twaróg – krucha, ale piękna.",
+          "sprite": "gierek",
           "background": ""
         },
         {
+          "speaker": "Alice",
+          "text": "A ty jesteś jak stare, zapomniane hasło – może przestarzałe, ale trzymam je w sercu.",
+          "sprite": "Syska",
+          "background": ""
+        }
+      ]
+    },
+    {
+      "id": "cheese_only",
+      "background": "temp1",
+      "nextScene": "",
+      "lines": [
+        {
           "speaker": "Ty",
-          "text": "Z takim zaangażowaniem ludu pracującego miast i wsi nie może się nie udać. Do dzieła!",
+          "text": "Ser jest wieczny. Kobieta może odejść. Ale gouda? Gouda zostaje.",
           "sprite": "gierek",
-          "background": "castle_gate"
+          "background": ""
         },
         {
           "speaker": "Alice",
-          "text": "Sesja wprowadzająca została zakończona. Oczekuj danych wejściowych z warstwy rozgrywki zasadniczej.",
+          "text": "To najdziwniejsze wyznanie miłości, jakie słyszałam. Ale... chyba to rozumiem.",
           "sprite": "Syska",
-          "background": "castle_gate"
+          "background": ""
         }
       ]
     }
+    
+    
+    
+    
   ]
 }
