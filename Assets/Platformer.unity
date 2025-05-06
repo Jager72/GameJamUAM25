@@ -10763,7 +10763,7 @@ GameObject:
   - component: {fileID: 1629157994}
   - component: {fileID: 1629157995}
   m_Layer: 0
-  m_Name: Shooter
+  m_Name: ProjectileManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10778,11 +10778,10 @@ Transform:
   m_GameObject: {fileID: 1629157993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.01, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.47023, y: 0.47023, z: 0.47023}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 826118498}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1629157995
@@ -10797,7 +10796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5876fb945dd560b1ca8fc587e8282200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 826118495}
+  projectilePrefab: {fileID: 2309551579288248927, guid: 217393694df81e27890ae7ad8bcdc858, type: 3}
   jsonFileName: spawnData.json
 --- !u!1 &2114557817
 GameObject:
