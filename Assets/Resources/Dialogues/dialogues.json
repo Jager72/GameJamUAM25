@@ -1,5 +1,35 @@
 {
   "dialogues": [
+    {
+      "id": "debug",
+      "background": "temp1",
+      "nextScene": "",
+      "lines": [
+          {
+              "speaker": "Narrator",
+              "text": "DebugKlepa",
+              "sprite": "",
+              "background": ""
+          },
+          {
+            "speaker": "Narrator",
+            "text": "Wybór Klepa",
+            "sprite": "",
+            "background": "",
+            "battle": "Lance2", 
+            "choices": [
+            {
+                "text": "Jaskra",
+                "nextId": "hackathon_city"
+            },
+            {
+                "text": "NieJaskra",
+                "nextId": "hackathon_intro"
+            }
+          ]
+        }
+      ]
+  },
       {
           "id": "prolog",
           "background": "temp1",
@@ -58,7 +88,23 @@
                   "text": "Masz siedem dni. Znajdź partnera. Przetrwaj słowne starcia. A być może… odkryj co skrywają zakamarki Mondstadu. Czas grać o serca i nie dać się złamać.",
                   "sprite": "",
                   "background": ""
-              }
+              },
+              {
+                "speaker": "Narrator",
+                "text": "Kto przykuje twoją uwagę?",
+                "sprite": "",
+                "background": "",
+                "choices": [
+                {
+                    "text": "Widzisz Elfkę spowitą cieniami, jedyne co przychodzi ci do głowy, \"zniszcz mi życie\"",
+                    "nextId": "hackathon_city"
+                },
+                {
+                    "text": "Widzisz Mężczyzne dźwigającego brzemie przeszłości, jego twarde spojrzenie nie pozwala ci oderwać wzroku",
+                    "nextId": "hackathon_intro"
+                }
+              ]
+            }
           ]
       },
       {

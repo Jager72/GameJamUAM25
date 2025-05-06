@@ -70,21 +70,30 @@ public class ProjectileSpawner : MonoBehaviour
             Debug.Log($"Wave {i + 1}: Starting...");
             // Reset flag for this wave
             bool hitInWave = false;
+            bool diedInWave = false;
             // Subscribe to the Projectile event
             Action onHit = () => hitInWave = true;
-            Projectile.OnPlayerHit += onHit;
+            Action onDead = () => diedInWave = true;
 
+            Projectile.OnPlayerHit += onHit;
+            PlayerHealth.OnPlayerDead += onDead;
             // Spawn & wait for wave to finish
             yield return StartCoroutine(SpawnWave(waves[i].spawnPoints));
 
             // Unsubscribe
             Projectile.OnPlayerHit -= onHit;
+            PlayerHealth.OnPlayerDead -= onDead;
 
-            // Log result
-            if (hitInWave)
+            if (diedInWave)
             {
-                i--;
+                i = -1;
+                Debug.Log($"Wave {i + 1}: Player has died! retrying...");
+                FindAnyObjectByType<PlayerHealth>().Heal(5);
+            }
+            else if (hitInWave)
+            {
                 Debug.Log($"Wave {i + 1}: Player was hit! retrying...");
+                i--;
             }
             else
             {
