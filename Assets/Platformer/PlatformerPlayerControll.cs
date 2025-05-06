@@ -1,9 +1,13 @@
+﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput))]
 public class PlatformerPlayerController : MonoBehaviour
 {
+    // Fired immediately on dash-press so platforms can switch to trigger
+    public static event Action<float> OnDashEvent;
+
     [Header("Movement")]
     public float moveSpeed = 5f;
     public float acceleration = 20f;
@@ -24,24 +28,30 @@ public class PlatformerPlayerController : MonoBehaviour
     public float dashForce = 20f;
     [Tooltip("Cooldown before you can dash again.")]
     public float dashCooldown = 1f;
+    [Tooltip("How long after a dash press the player can phase through dash-through platforms.")]
+    public float dashThroughWindow = 0.2f;
 
     [Header("Ground Detection")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.1f;
     [SerializeField] private LayerMask groundLayer;
 
+    [HideInInspector] public float lastDashTime;
+    public bool CanDashThrough => Time.time - lastDashTime <= dashThroughWindow;
+
     private Rigidbody2D rb;
     private PlayerInput playerInput;
     private float moveInput;
     private float facingDirection = 1f;  // +1 = right, -1 = left
 
-    // Timers & state
+    // timers & state
     private float coyoteTimeCounter;
     private float jumpBufferCounter;
     private bool jumpBuffered;
     private bool isGrounded;
 
     private float dashCooldownTimer;
+    private Transform _originalParent;
 
     void Awake()
     {
@@ -51,20 +61,20 @@ public class PlatformerPlayerController : MonoBehaviour
 
     void Update()
     {
-        // Ground Check
+        // Ground check
         isGrounded = Physics2D.OverlapCircle(
             groundCheck.position,
             groundCheckRadius,
             groundLayer
         );
 
-        // Coyote Time
+        // Coyote time
         if (isGrounded)
             coyoteTimeCounter = coyoteTime;
         else
             coyoteTimeCounter -= Time.deltaTime;
 
-        // Jump Buffering
+        // Jump buffering
         if (jumpBuffered)
         {
             jumpBufferCounter = jumpBufferTime;
@@ -75,7 +85,7 @@ public class PlatformerPlayerController : MonoBehaviour
             jumpBufferCounter -= Time.deltaTime;
         }
 
-        // Execute Buffered Jump
+        // Execute buffered jump
         if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -83,7 +93,7 @@ public class PlatformerPlayerController : MonoBehaviour
             coyoteTimeCounter = 0f;
         }
 
-        // Dash Cooldown
+        // Dash cooldown
         if (dashCooldownTimer > 0f)
             dashCooldownTimer -= Time.deltaTime;
     }
@@ -93,15 +103,10 @@ public class PlatformerPlayerController : MonoBehaviour
         // Smooth horizontal movement
         float targetSpeed = moveInput * moveSpeed;
         float speedDiff = targetSpeed - rb.linearVelocity.x;
-
-        float accelRate = (Mathf.Abs(targetSpeed) > 0.01f)
-            ? acceleration
-            : deceleration;
-
+        float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
         accelRate *= isGrounded ? 1f : airControlMultiplier;
 
-        Vector2 force = Vector2.right * speedDiff * accelRate;
-        rb.AddForce(force);
+        rb.AddForce(Vector2.right * speedDiff * accelRate);
     }
 
     public void OnMove(InputValue value)
@@ -128,11 +133,34 @@ public class PlatformerPlayerController : MonoBehaviour
 
     public void OnSprint(InputValue value)
     {
-        if (value.isPressed && dashCooldownTimer <= 0f)
+        if (!value.isPressed || dashCooldownTimer > 0f)
+            return;
+
+        // 1) Apply instantaneous dash impulse
+        rb.AddForce(Vector2.right * facingDirection * dashForce, ForceMode2D.Impulse);
+
+        // 2) Start cooldown & record time
+        dashCooldownTimer = dashCooldown;
+        lastDashTime = Time.time;
+
+        // 3) Broadcast event so platforms can switch to trigger immediately
+        OnDashEvent?.Invoke(dashThroughWindow);
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.collider.CompareTag("MovingPlatform"))
         {
-            // Instantaneous dash impulse
-            rb.AddForce(Vector2.right * facingDirection * dashForce, ForceMode2D.Impulse);
-            dashCooldownTimer = dashCooldown;
+            _originalParent = transform.parent;
+            transform.SetParent(col.transform);
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.collider.CompareTag("MovingPlatform"))
+        {
+            transform.SetParent(_originalParent);
         }
     }
 

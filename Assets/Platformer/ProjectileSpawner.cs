@@ -1,12 +1,15 @@
 using UnityEngine;
 using System.IO;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 [System.Serializable]
 public class SpawnData
 {
     public Vector2 position;
     public float angleDegrees;
+    public float delaySeconds = 0f;
+    public float speed = 6f;
 }
 
 [System.Serializable]
@@ -36,35 +39,43 @@ public class ProjectileSpawner : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        // spawn projectiles at start
+        StartCoroutine(SpawnProjectiles());
+    }
+
     void Update()
     {
         // e.g. press Left control to fire
         if (Keyboard.current.leftCtrlKey.wasPressedThisFrame)
-            SpawnProjectiles();
+            StartCoroutine(SpawnProjectiles());
     }
 
-    private void SpawnProjectiles()
+    private IEnumerator SpawnProjectiles()
     {
         foreach (var data in spawnPoints)
         {
-            // 1) create an empty owner at the given coords
             var holder = new GameObject("Shooter");
             holder.transform.position = data.position;
             holder.AddComponent<DestroyWhenEmpty>();
             holder.transform.SetParent(transform);
 
-            // 2) spawn the projectile as a child, set its direction
             var projGo = Instantiate(
                 projectilePrefab,
                 data.position,
                 Quaternion.identity,
                 holder.transform
             );
-
             var proj = projGo.GetComponent<Projectile>();
             if (proj != null)
+            {
                 proj.SetAngle(data.angleDegrees);
+                proj.SetSpeed(data.speed);
+            }
 
+            // wait before next spawn
+                yield return new WaitForSeconds(data.delaySeconds);
         }
     }
 }

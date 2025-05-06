@@ -25,6 +25,11 @@ public class Projectile : MonoBehaviour
         direction = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
     }
 
+    public void SetSpeed(float newSpeed)
+    {
+        speed = newSpeed;
+    }
+
     // Update is called once per frame
     void Update()
     {
