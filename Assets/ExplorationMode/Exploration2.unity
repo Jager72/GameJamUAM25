@@ -926,8 +926,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4288914344
+  m_fontColor: {r: 0.65882355, g: 0.6392157, b: 0.6392157, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -944,8 +944,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 44
+  m_fontSizeBase: 44
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1345,7 +1345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1970249760
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1604,7 +1604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8897145519170641443, guid: 611581ef4caa43046b2005e0b2d7c9f2, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8897145519170641443, guid: 611581ef4caa43046b2005e0b2d7c9f2, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1612,7 +1612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8897145519170641443, guid: 611581ef4caa43046b2005e0b2d7c9f2, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8897145519170641443, guid: 611581ef4caa43046b2005e0b2d7c9f2, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1652,11 +1652,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8897145519170641443, guid: 611581ef4caa43046b2005e0b2d7c9f2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 384
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8897145519170641443, guid: 611581ef4caa43046b2005e0b2d7c9f2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -296.94717
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8897145519170641443, guid: 611581ef4caa43046b2005e0b2d7c9f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
