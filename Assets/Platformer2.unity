@@ -719,6 +719,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7086294941255875214, guid: a83a1ef78b8f1de42ad5135dcc97ddca, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8631084764357292513, guid: a83a1ef78b8f1de42ad5135dcc97ddca, type: 3}
       propertyPath: dashForce
       value: 70
@@ -726,7 +730,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2398278011347094455, guid: a83a1ef78b8f1de42ad5135dcc97ddca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1669475308}
   m_SourcePrefab: {fileID: 100100000, guid: a83a1ef78b8f1de42ad5135dcc97ddca, type: 3}
 --- !u!1 &1590409431
 GameObject:
@@ -908,6 +915,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 2309551579288248927, guid: 217393694df81e27890ae7ad8bcdc858, type: 3}
   jsonFileName: spawnData.json
+--- !u!1 &1669475301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2398278011347094455, guid: a83a1ef78b8f1de42ad5135dcc97ddca, type: 3}
+  m_PrefabInstance: {fileID: 1419021704}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1669475308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669475301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac83fff57e61ff64e89650114ccf22a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
 --- !u!1 &2114557817
 GameObject:
   m_ObjectHideFlags: 0
