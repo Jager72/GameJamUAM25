@@ -102,4 +102,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   lifetime: 5
-  angleDegrees: 90
+  angleDegrees: 0
