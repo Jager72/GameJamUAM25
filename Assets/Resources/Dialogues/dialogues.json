@@ -1,99 +1,1215 @@
 {
   "dialogues": [
-    {
-      "id": "ser_rozmowa",
-      "background": "temp1",
-      "nextScene": "",
-      "lines": [
-        {
-          "speaker": "Alice",
-          "text": "Gierek... czy ty kiedykolwiek... kochałeś?",
-          "sprite": "Syska",
-          "background": ""
-        },
-        {
-          "speaker": "Ty",
-          "text": "Kochałem? Towarzyszko, ja kochałem... ser. Żółty. W plastrach. Na kartki.",
-          "sprite": "gierek",
-          "background": ""
-        },
-        {
-          "speaker": "Alice",
-          "text": "To nie jest to samo. Miłość to zaufanie. Jak w protokole wymiany kluczy.",
-          "sprite": "Syska",
-          "background": ""
-        },
-        {
-          "speaker": "Ty",
-          "text": "Zaufanie buduje się latami, tak jak dojrzewa dobry edamski. A zdrada? To jak czarny rynek nabiału.",
-          "sprite": "gierek",
-          "background": ""
-        },
-        {
-          "speaker": "Alice",
-          "text": "Czyli... kochałeś ser tak, jak powinno się kochać człowieka?",
-          "sprite": "Syska",
-          "background": ""
-        },
-        {
-          "speaker": "Ty",
-          "text": "Ser nie odchodzi. Nie pisze SMS-a, że wraca do Zachodu.",
-          "sprite": "gierek",
-          "background": ""
-        },
-        {
-          "speaker": "Alice",
-          "text": "To smutne. Ale prawdziwe. Może... może my też jesteśmy jak dwa kawałki goudy w foliopaku?",
-          "sprite": "Syska",
-          "background": "",
-          "choices": [
-            { "text": "Powiedz, że kochasz", "nextId": "confess_love" },
-            { "text": "Powiedz, że masz tylko ser w sercu", "nextId": "cheese_only" }
+      {
+          "id": "prolog",
+          "background": "temp1",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Narrator",
+                  "text": "Mondstad. To właśnie tutaj, od setek lat, w czasie pierwszej pełni po przesileniu, odbywa się Festiwal Księżyca — pradawny rytuał miłosnego związania dwojga dusz.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Dawniej służył jako magiczne przymierze między rodami, dziś… to przede wszystkim spektakl. Ale nie stracił swej mocy.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "To właśnie wtedy ulice miasta rozświetlają się setkami lampionów, a powietrze wypełniają zapachy słodkich ciastek księżycowych i kwitnących nocnych lilii.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Według legendy, samotni nie mogą wziąć udziału w Festiwalu. Każdy uczestnik musi odnaleźć partnera przed rozpoczęciem ceremonii — inaczej zostaje symbolicznie „wymazany” z rytuału. A w Mondstadzie, gdzie miłość traktuje się jak sport, to gorsze niż klątwa.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Trafiasz do miasta na tydzień przed Festiwalem. Jesteś jak agent 007. Zero znajomości. Zero czasu do stracenia. Siedem dni na znalezienie osoby, która pójdzie z tobą na Festiwal.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Jeśli chcesz wziąć udział w ceremonii — musisz zdobyć czyjeś zaufanie, zainteresowanie no i oczywiście - serce. A Mondstad nie ułatwia życia. Tu każde spotkanie może skończyć się pojedynkiem.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "W kawiarniach, na mostach, nawet w bibliotece — wszędzie odbywają się potyczki na spojrzenia, riposty i na miecze. Niektórzy szukają romansu. Inni rozrywki. Jeszcze inni — politycznego sojuszu lub czystej zemsty.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "A ty? Kim chcesz być?",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Masz siedem dni. Znajdź partnera. Przetrwaj słowne starcia. A być może… odkryj co skrywają zakamarki Mondstadu. Czas grać o serca i nie dać się złamać.",
+                  "sprite": "",
+                  "background": ""
+              }
           ]
-        }
-      ]
-    },
-    {
-      "id": "confess_love",
-      "background": "temp1",
-      "nextScene": "",
-      "lines": [
-        {
-          "speaker": "Ty",
-          "text": "Towarzyszko Alice... twoja logika jest jak twaróg – krucha, ale piękna.",
-          "sprite": "gierek",
+      },
+      {
+          "id": "hackathon_city",
+          "background": "city_street",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Narrator",
+                  "text": "Odchodzisz dalej, w głąb miasta. Ulice, a także twój żołądek, robią się coraz bardziej puste. Zauważasz szyld karczmy, na którym widnieje nazwa 'Pod Nadkomisarzem'.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "Co chcesz zrobić?",
+                  "sprite": "gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "Krąż dalej po okolicy",
+                          "nextId": "explore_area"
+                      },
+                      {
+                          "text": "Wejdź do środka",
+                          "nextId": "enter_inn"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "explore_area",
+          "background": "city_street",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Narrator",
+                  "text": "Postanawiasz poszukać innego miejsca, żeby zaspokoić swój głód. Niestety, mija trochę czasu zanim zorientujesz się, że w okolicy są tylko… świątynie? Co to za dzielnica? Głód doskwiera ci coraz bardziej, decydujesz się wrócić do karczmy 'Pod Nadkomisarzem'. Wchodzisz do środka.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "Wchodzę do karczmy.",
+                  "sprite": "gierek",
+                  "background": "",
+                  "nextId": "enter_inn"
+              }
+          ]
+      },
+      {
+          "id": "enter_inn",
+          "background": "inn_interior",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Narrator",
+                  "text": "Wnętrze karczmy wypełnia półmrok rozjaśniany przez umieszczone gdzieniegdzie lampiony. Karczma pachnie… no cóż, księżycowymi ciastkami i czymś, co jeszcze rano próbowało być zupą.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Siedzisz przy kontuarze, przyglądając się ciastku, które z braku innych możliwości masz zamiar zamówić.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Z cienia wyłania się postać w czarnym płaszczu.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Elfka",
+                  "text": "Nie polecam, te zostały chyba jeszcze z zeszłego roku",
+                  "sprite": "elf",
+                  "background": ""
+              },
+              {
+                  "speaker": "Karczmarka",
+                  "text": "Co to za oszczerstwa! Piekłam je dziś rano!",
+                  "sprite": "innkeeper",
+                  "background": ""
+              },
+              {
+                  "speaker": "Elfka",
+                  "text": "Jeśli zjesz to ciastko, możesz doznać jednego z trzech efektów:\n a) słodkiej śpiączki,\n b) metafizycznego rozczarowania,\n c) wizji wszystkich swoich byłych. Ale co ja tam wiem, nie jestem cukiernikiem.",
+                  "sprite": "elf",
+                  "background": ""
+              },
+              {
+                  "speaker": "Karczmarka",
+                  "text": "Wypraszam sobie! Moje ciastka to dziedzictwo rodzinne! Przepis przekazywany od pokolenia do pokolenia, każda rodzynka błogosławiona przez duchy ciotek.",
+                  "sprite": "innkeeper",
+                  "background": ""
+              },
+              {
+                  "speaker": "Elfka",
+                  "text": "Duchy ciotek były chyba ślepe i bez kubków smakowych.",
+                  "sprite": "elf",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "Co chcesz zrobić?",
+                  "sprite": "gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "Skoro już o ciotkach mowa, czy ja właśnie wpadłem na rodzinne spotkanie czy do karczmy?",
+                          "nextId": "ask_family"
+                      },
+                      {
+                          "text": "Nie wiem, kto jest groźniejszy — ty, czy to ciastko.",
+                          "nextId": "compare_dangers"
+                      },
+                      {
+                          "text": "Może podzielimy się ciastkiem? Jeśli oboje przeżyjemy, pogadamy.",
+                          "nextId": "share_cookie"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "ask_family",
+          "background": "inn_interior",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Elfka",
+                  "text": "W sumie jedno i drugie. Karczma to epicentrum lokalnej dramy. A ja jestem jej samozwańczą obserwatorką. Mam notatki.",
+                  "sprite": "elf",
+                  "background": ""
+              },
+              {
+                  "speaker": "Karczmarka",
+                  "text": "Nie pyskuj za dużo, elfko. Jeszcze ktoś pomyśli, że naprawdę tu pracujesz i zaczną cię pytać o menu.",
+                  "sprite": "innkeeper",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "compare_dangers",
+          "background": "inn_interior",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Elfka",
+                  "text": "A kto powiedział, że to się wyklucza?",
+                  "sprite": "elf",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "W sumie? To uczciwe.",
+                  "sprite": "gierek",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "share_cookie",
+          "background": "inn_interior",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Elfka",
+                  "text": "Odważnie. W Mondstadzie nie dzieli się ciastek z nieznajomymi. To może prowadzić do… wspólnej hipoteki.",
+                  "sprite": "elf",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "Zaryzykuję. W razie czego powiem, że to ty mnie poczęstowałaś.",
+                  "sprite": "gierek",
+                  "background": ""
+              },
+              {
+                  "speaker": "Elfka",
+                  "text": "Sprytne. Prawie imponujące. Nazywam się Syśka. A ty jesteś…?",
+                  "sprite": "elf",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "Podaj swoje prawdziwe imię",
+                          "nextId": "true_name"
+                      },
+                      {
+                          "text": "Nazywają mnie Książę Ciastek. Ale możesz mówić mi Y/N.",
+                          "nextId": "cookie_prince"
+                      },
+                      {
+                          "text": "Nie mam imienia. Zostawiłem je w szatni razem z godnością.",
+                          "nextId": "no_name"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "true_name",
+          "background": "inn_interior",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "Brzmi uczciwie. Ale w Mondstadzie uczciwość to waluta, której nikt nie rozpoznaje. Zobaczymy, czy na nią stać cię również przy śniadaniu.",
+                  "sprite": "elf",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "cookie_prince",
+          "background": "inn_interior",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "Y/N, powiadasz? Cóż, widywałam gorsze pseudonimy. Jeden typ w zeszłym roku kazał mówić na siebie 'Lord Boczek’. Nie przeżył do końca festiwalu.",
+                  "sprite": "elf",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "no_name",
+          "background": "inn_interior",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "Poetyckie. Choć niepraktyczne. Spróbuj kiedyś zamówić kawę bez podawania imienia — dramat przy ladzie gwarantowany.",
+                  "sprite": "elf",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "end_scene",
+          "background": "inn_interior",
+          "nextScene": "",
+          "lines": {
+              "speaker": "Narrator",
+              "text": "Zjesz ciastko — smakuje... zaskakująco dobrze. Może nawet trochę magicznie? A może to po prostu głód pomieszał ci zmysły.",
+              "sprite": "",
+              "background": ""
+          }
+      },
+      {
+          "speaker": "Syśka",
+          "text": "Uważaj. Karczma to tylko początek. Prawdziwe niebezpieczeństwo zaczyna się, gdy ktoś chce cię z niej wyciągnąć.",
+          "sprite": "elf",
           "background": ""
-        },
-        {
-          "speaker": "Alice",
-          "text": "A ty jesteś jak stare, zapomniane hasło – może przestarzałe, ale trzymam je w sercu.",
-          "sprite": "Syska",
-          "background": ""
-        }
-      ]
-    },
-    {
-      "id": "cheese_only",
-      "background": "temp1",
-      "nextScene": "",
-      "lines": [
-        {
-          "speaker": "Ty",
-          "text": "Ser jest wieczny. Kobieta może odejść. Ale gouda? Gouda zostaje.",
-          "sprite": "gierek",
-          "background": ""
-        },
-        {
-          "speaker": "Alice",
-          "text": "To najdziwniejsze wyznanie miłości, jakie słyszałam. Ale... chyba to rozumiem.",
-          "sprite": "Syska",
-          "background": ""
-        }
-      ]
-    }
-    
-    
-    
-    
+      },
+      {
+          "id": "ranalac_1",
+          "background": "temple_courtyard_rain",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Narrator",
+                  "text": "Wieczór, dziedziniec świątyni Ranalaca. Cicho, oprócz kropli deszczu stukających o kamienie i... pojedynczego westchnięcia.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Zbliżasz się do smukłej postaci siedzącej na schodach świątyni. W czarnej pelerynie, z elfimi uszami ledwo widocznymi spod kaptura, Syśka wygląda jak wyjęta z melancholijnej ballady.",
+                  "sprite": "Syska",
+                  "background": ""
+              },
+              {
+                  "speaker": "Syśka",
+                  "text": "Jeśli przyszedłeś mnie złożyć w ofierze, muszę uprzedzić — jestem wegetarianką i mam bardzo gorzki charakter.",
+                  "sprite": "Syska",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„Nie przyszedłem z nożem. Przyniosłem zainteresowanie i ciastko.”",
+                          "nextId": "ranalac_2"
+                      },
+                      {
+                          "text": "„Mam też ketchup, jakbyś jednak zmieniła zdanie.”",
+                          "nextId": "ranalac_2"
+                      },
+                      {
+                          "text": "„Właściwie… przyszedłem z pytaniem. Czemu siedzisz tu, jakbyś czekała na zdradę z nieba?”",
+                          "nextId": "ranalac_2"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "ranalac_2",
+          "background": "temple_courtyard_rain",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "Wiesz, ludzie dziwnie patrzą, gdy modlisz się do boga zdrad. Z jakiegoś powodu myślą, że planuję zamach stanu. (Ale tylko w poniedziałki.) Ranalac nie jest bogiem zła. On się troszczy. O tych, których wszyscy inni porzucili. W tym… mnie.",
+                  "sprite": "Syska",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„A więc jesteś porzucona księżniczka? Brakuje tylko wilków i dramatycznej muzyki.”",
+                          "nextId": "ranalac_3"
+                      },
+                      {
+                          "text": "„A może po prostu znalazłaś miejsce, gdzie nie musisz udawać, że wszystko jest w porządku?”",
+                          "nextId": "ranalac_3"
+                      },
+                      {
+                          "text": "„To brzmi jakbyś znała to miejsce aż za dobrze. Ile razy cię zawiedli?”",
+                          "nextId": "ranalac_3"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "ranalac_3",
+          "background": "temple_courtyard_rain",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "Cztery razy przez ojca. Dwa przez radę. Raz przez narzeczonego… chociaż tam to bardziej on się zawiódł, bo przeżył. I niezliczoną ilość razy przez siebie samą. Ale hej — z każdej zdrady można się czegoś nauczyć. Na przykład… nie ufać mężczyznom w rękawiczkach bez palców.",
+                  "sprite": "Syska",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„A co z mężczyznami z krzywym uśmiechem i sercem na dłoni?”",
+                          "nextId": "ranalac_4"
+                      },
+                      {
+                          "text": "„Jeśli to cię pocieszy, moje rękawiczki mają wszystkie palce. I kieszonkę na cukierki.”",
+                          "nextId": "ranalac_4"
+                      },
+                      {
+                          "text": "„Ja z kolei nauczyłem się nie ufać kobietom, które znikają w cieniu… i zostawiają po sobie zapach kadzidła i sarkazmu.”",
+                          "nextId": "ranalac_4"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "ranalac_4",
+          "background": "temple_courtyard_rain",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "*śmieje się* Muszę przyznać, że masz talent. Do słów i do wchodzenia ludziom pod skórę. Albo to ja mam słabą tarczę dziś wieczorem.",
+                  "sprite": "Syska",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„Może po prostu dobrze się czujemy razem. Albo to magia świątyni zdrad — każda obietnica brzmi piękniej.”",
+                          "nextId": "ranalac_5"
+                      },
+                      {
+                          "text": "„Jeśli kiedyś będziesz potrzebować zdrady kontrolowanej, jestem certyfikowanym rozczarowaniem.”",
+                          "nextId": "ranalac_5"
+                      },
+                      {
+                          "text": "„Nie umiem rzucać zaklęć, ale jeśli miałbym rzucić urok… to pewnie już działa.”",
+                          "nextId": "ranalac_5"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "ranalac_5",
+          "background": "temple_courtyard_moonlight",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "Powinnam cię unikać. Jesteś zbyt zabawny, żeby być bezpieczny. Ale jeśli przyniesiesz jeszcze jedno ciastko… Możliwe, że rozważę kolejną zdradę.",
+                  "sprite": "Syska",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Cóż za widok — przypadkowy awanturnik, zagubiona księżniczka, księżyc w tle, jedno ciastko dzielone na pół, z cieniem uśmiechu i nutą ryzyka.",
+                  "sprite": "",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "monstad_library_1",
+          "background": "monstad_library_sphere_of_silence",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Narrator",
+                  "text": "Przekraczasz masywne, skrzypiące drzwi. Wewnątrz: zapach starego pergaminu, szeptów zaklęć i… delikatny aromat dzikiej róży i atramentu. Między regałami porusza się znajoma sylwetka w czerni. Syśka. Z nosem w książce, z brwią wzniesioną, z warkoczem, który niepokornie zawija się wokół jednej z zakładek.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Nie zauważa cię od razu, bo jest pochłonięta lekturą pt. „Sztuka subtelnej adoracji, tom III: kiedy nie chcesz wyglądać jak desperat(ka)”",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„To fascynujące, że ktoś tak błyskotliwy jak ty potrzebuje poradnika do flirtowania.”",
+                          "nextId": "monstad_library_2"
+                      },
+                      {
+                          "text": "„Czytam cię jak otwartą książkę. A ta akurat wygląda na bardzo konkretną.”",
+                          "nextId": "monstad_library_2"
+                      },
+                      {
+                          "text": "„Potrzebujesz pomocy w sekcji ‘zauroczenie’? Mam doświadczenie praktyczne.”",
+                          "nextId": "monstad_library_2"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "monstad_library_2",
+          "background": "monstad_library_sphere_of_silence",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "To… czysto akademickie badania. Potrzebuję ich do eseju o… socjokulturowych formach zalotów. Niech cię nie zmyli rozdział „Jak powiedzieć 'kocham cię', nie patrząc w oczy”.",
+                  "sprite": "Syska",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„A jak brzmi wersja z patrzeniem? Może przetrenujemy?”",
+                          "nextId": "monstad_library_3"
+                      },
+                      {
+                          "text": "„Jeśli to wszystko dla nauki, mogę być twoim materiałem badawczym. Tylko zaznacz, że jestem delikatny.”",
+                          "nextId": "monstad_library_3"
+                      },
+                      {
+                          "text": "„Czy w którymś z tomów jest rozdział o tym, jak nie zakochać się w rozmówczyni?”",
+                          "nextId": "monstad_library_3"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "monstad_library_3",
+          "background": "monstad_library_sphere_of_silence",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "(pozornie oburzona, ale lekki rumieniec zdradza jej nastrój) To była sekcja 'hipotetyczna'. A ty… ty jesteś wyjątkowo niebezpieczny dla eksperymentów. Zaczynasz wpływać na wyniki.",
+                  "sprite": "Syska",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„To dobrze. Chciałbym być jedynym czynnikiem zakłócającym w twoim życiu.”",
+                          "nextId": "monstad_library_4"
+                      },
+                      {
+                          "text": "„Wyobraź sobie jaką pracę magisterską mogłabyś napisać, gdybym dał ci pełen dostęp do… no, siebie.”",
+                          "nextId": "monstad_library_4"
+                      },
+                      {
+                          "text": "„Skoro wpływam na wyniki, może czas przejść od teorii do praktyki?”",
+                          "nextId": "monstad_library_4"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "monstad_library_4",
+          "background": "monstad_library_sphere_of_silence",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "(spogląda na ciebie znad grzbietu książki, z półuśmiechem i spojrzeniem, które mogłoby przesuwać góry — lub przynajmniej regały) Chciałam polecić ci coś romantycznego. Ale teraz myślę, że może to ty powinieneś napisać moją nową ulubioną historię. Rozdział po rozdziale. W duecie.",
+                  "sprite": "Syska",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„Tylko jeśli zakończenie będzie otwarte. Albo bardzo długie i z mnóstwem scen pocałunku.”",
+                          "nextId": "monstad_library_5"
+                      },
+                      {
+                          "text": "„Obiecuję nie zdradzić żadnego wątku. Chyba że chcesz — z premedytacją.”",
+                          "nextId": "monstad_library_5"
+                      },
+                      {
+                          "text": "„W takim razie… zacznijmy od tytułu. ‘Dziewczyna, która znała każdy sekret — i chłopak, który chciał znać tylko ją’?”",
+                          "nextId": "monstad_library_5"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "monstad_library_5",
+          "background": "monstad_library_sphere_of_silence",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Syśka",
+                  "text": "(uśmiecha się szeroko, a książka wraca do regału) Może to ty będziesz tym, kto zdefiniuje wszystkie romantyczne historie w moim życiu.",
+                  "sprite": "Syska",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Książka wraca na regał. Syśka oddala się, a ty zostajesz w tej samej ciszy, która teraz zdaje się mieć nowy sens. Znajdujesz się w samym sercu biblioteki, wśród słów, które mogłyby stać się waszą wspólną historią.",
+                  "sprite": "",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "hackathon_intro",
+          "background": "",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Narrator",
+                  "text": "Przekraczasz bramę miasta. Jest tłoczno. Jest głośno. Trochę śmierdzi. Próbujesz wyrwać się z tłumu i znaleźć jakiś spokojny kąt, kiedy nagle…",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Gnom",
+                  "text": "Zostaw mnie! Jestem niewinny!",
+                  "sprite": "gnom",
+                  "background": ""
+              },
+              {
+                  "speaker": "Rycerz",
+                  "text": "Stać! Na Boga — oddaj, co ukradłeś, zanim zarobisz kilka ciosów",
+                  "sprite": "knight",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Rycerz łapie gnoma za kaptur, podnosi go w górę i zaczyna nim potrząsać. Z licznych kieszeni gnoma zaczynają wysypywać się różne kosztowności.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Gnom",
+                  "text": "Puszczaj! Zgłoszę cię do straży! To przekroczenie uprawnień!",
+                  "sprite": "gnom",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Przechodnie przyglądają się tej scenie, niektórzy bardziej niż losy gnoma śledzą trasę toczących się monet.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Rycerz",
+                  "text": "Odsunąć się, bo ten złodziejaszek nie będzie jedynym, który dzisiaj trafi na dołek",
+                  "sprite": "knight",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "Co chcesz zrobić?",
+                  "sprite": "gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "Mogę jakoś pomóc? Te monety nie zbiorą się same",
+                          "nextId": "help_gather"
+                      },
+                      {
+                          "text": "Przyglądaj się w ciszy",
+                          "nextId": "watch_in_silence"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "help_gather",
+          "background": "city_square",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Rycerz",
+                  "text": "Pozbieraj je, ale mam cię na oku. Nie myśl, że nie zauważę, jeśli któraś trafi do twojej kieszeni.",
+                  "sprite": "knight",
+                  "background": ""
+              },
+              {
+                  "speaker": "Gnom",
+                  "text": "To są moje dowody smakowe! Wypiek babci, przysięgam na wszystko, co słodkie!",
+                  "sprite": "gnom",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Masz dwie opcje.",
+                  "sprite": "",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "Spróbuj coś ukraść",
+                          "nextId": "steal"
+                      },
+                      {
+                          "text": "Oddaj wszystko rycerzowi",
+                          "nextId": "return_items"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "steal",
+          "background": "city_square",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Rycerz",
+                  "text": "Ruszaj się jeszcze raz w ten sposób, a oberwiesz łokciem w sumienie.",
+                  "sprite": "knight",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Jesteś skuty. Gnom się śmieje. Straż miejska dokumentuje wszystko na pergaminie.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Gnom",
+                  "text": "Witamy w klubie. Kto ma więcej niż trzy kradzieże, stawia dziś rundę!",
+                  "sprite": "gnom",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "return_items",
+          "background": "city_square",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Rycerz",
+                  "text": "Dziękuję… Rzadko ktoś pomaga, nie próbując od razu zostać baronem moralności. Masz imię?",
+                  "sprite": "knight",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "Mam, ale lubię najpierw sprawdzić, czy warto się przedstawić.",
+                  "sprite": "gierek",
+                  "background": ""
+              },
+              {
+                  "speaker": "Rycerz",
+                  "text": "Niech będzie. A więc dziś nie idziesz do lochu. To całkiem niezły start w Mondstadzie.",
+                  "sprite": "knight",
+                  "background": ""
+              },
+              {
+                  "speaker": "Gnom",
+                  "text": "Nie martw się, wrócę po swoje ciasteczka. On nie wie, że mam drugi zestaw kieszeni.",
+                  "sprite": "gnom",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "watch_in_silence",
+          "background": "city_square",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Rycerz",
+                  "text": "Hej ty! Nie gap się tak, lepiej pomóż mi pozbierać te wszystkie skarby, i nie myśl, że nie zauważę jeśli coś zniknie",
+                  "sprite": "knight",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "Co chcesz zrobić?",
+                  "sprite": "gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "Wracasz i zbierasz monety",
+                          "nextId": "help_gather"
+                      },
+                      {
+                          "text": "Nie mogę, mam... nietolerancję na ciężką pracę",
+                          "nextId": "work_intolerance"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "work_intolerance",
+          "background": "city_square",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Rycerz",
+                  "text": "A ja mam nietolerancję na nierobów. Ale nie martw się — znam terapię. Nazywa się: łopata i dziesięć godzin kopania rowów!",
+                  "sprite": "knight",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "eat_cookie",
+          "background": "city_square",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Ty",
+                  "text": "Patrzysz mu w oczy… i zjadasz jedno ciastko.",
+                  "sprite": "gierek",
+                  "background": ""
+              },
+              {
+                  "speaker": "Rycerz",
+                  "text": "Czy… właśnie… zjadłeś DOWÓD?",
+                  "sprite": "knight",
+                  "background": ""
+              },
+              {
+                  "speaker": "Gnom",
+                  "text": "TAK! KULTURA! CYWILIZACJA! ON ROZUMIE SMAK!",
+                  "sprite": "gnom",
+                  "background": ""
+              },
+              {
+                  "speaker": "Rycerz",
+                  "text": "Wiecie co? Mam już dość na dziś. Ten gnom pójdzie do lochu, ty — do książki rekordów za najbardziej brawurowe zjedzenie dowodu w historii Mondstadu.",
+                  "sprite": "knight",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "monstad_1",
+          "background": "monstad_wall_evening",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Narrator",
+                  "text": "Wieczór. Mury Monstadu. Cisza, wiatr, odgłosy miasta w tle. Wśród cienia i kamienia — Lance.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Zbroja połyskuje w świetle księżyca. Jego sylwetka stoi nieruchomo przy bramie, jak posąg. Patrzy gdzieś w dal — może za mur, może w siebie. Pochyla głowę, gdy podchodzisz.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Lance",
+                  "text": "Miasto śpi. Potwory też. Zaczynam się niepokoić.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„Może to nie potwory, tylko zakochani wracający z randek. Przerażające, ale legalne.”",
+                          "nextId": "monstad_2"
+                      },
+                      {
+                          "text": "„Nie boisz się, że jeśli zbyt długo stoisz w bezruchu, ktoś ci wrzuci monetę jak do żywego pomnika?”",
+                          "nextId": "monstad_2"
+                      },
+                      {
+                          "text": "„Z taką miną jak twoja to cud, że jeszcze żaden natchniony poeta nie próbował cię porwać do romansu.”",
+                          "nextId": "monstad_2"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "monstad_2",
+          "background": "monstad_wall_evening",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Lance",
+                  "text": "Nie jestem poetą. I rzadko się nadaję do romantyzowania. Ale rozumiem potrzebę żartu. To ludzka broń. Skuteczna. Czasem… bezlitosna.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„Mówisz to tak, jakbyś właśnie dał mi pozwolenie na flirt z bronią obosieczną.”",
+                          "nextId": "monstad_3"
+                      },
+                      {
+                          "text": "„Jeśli uśmiech to oręż, to twój jest wciąż schowany w pochwie.”",
+                          "nextId": "monstad_3"
+                      },
+                      {
+                          "text": "„Broń bez celu rdzewieje. Pozwól, że będę twoim... celem dzisiejszego patrolu?”",
+                          "nextId": "monstad_3"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "monstad_3",
+          "background": "monstad_wall_evening",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Lance",
+                  "text": "(Trochę milczy. Jakby rozważał, czy jesteś żartem, czy niebezpiecznym zaklęciem.) Nie jestem celem. Jestem tarczą. I nie wiem, czy to dobrze… że próbujesz się do niej przytulić.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„Tarcza też potrzebuje ciepła. I od czasu do czasu — kogoś, kto zdejmie z niej kurz.”",
+                          "nextId": "monstad_4"
+                      },
+                      {
+                          "text": "„Może nie przytulam się do tarczy. Może to ty opierasz się o mnie, tylko jeszcze o tym nie wiesz.”",
+                          "nextId": "monstad_4"
+                      },
+                      {
+                          "text": "„Jeśli coś cię kiedyś złamie… chciałbym być przy tobie. Choćby tylko po to, żeby posklejać.”",
+                          "nextId": "monstad_4"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "monstad_4",
+          "background": "monstad_wall_evening",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Lance",
+                  "text": "(odwraca wzrok, ale nie odchodzi) Nie potrzebuję litości. Ale… Czasem dobrze wiedzieć, że ktoś się zatrzymał. Że ktoś… widzi.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„Widzę cię. Całego — z ranami, żartami i tym zmarszczonym czołem.”",
+                          "nextId": "monstad_5"
+                      },
+                      {
+                          "text": "„Jeśli pozwolisz, mogę nawet zostać. Może przynieść herbatę. Może cię trochę rozśmieszyć.”",
+                          "nextId": "monstad_5"
+                      },
+                      {
+                          "text": "„Nie wiem, czy potrafię cię ocalić, Lance. Ale umiem być blisko. I nie zniknąć.”",
+                          "nextId": "monstad_5"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "monstad_5",
+          "background": "monstad_wall_evening",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Lance",
+                  "text": "(półszeptem) Może to nie ty masz się bać o mnie. Może to ja boję się… że nie zasługuję na to, co przynosisz.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Zatrzymujecie się przy murze. Patrzycie na miasto. On — wciąż zbrojny. Ty — wciąż otwarty. I przez chwilę milczenie nie boli. Jest czymś wspólnym.",
+                  "sprite": "",
+                  "background": ""
+              }
+          ]
+      },
+      {
+          "id": "flower_market_1",
+          "background": "flower_market_late_afternoon",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Narrator",
+                  "text": "Targ Kwiecisty, późne popołudnie. Wokół zapachy lawendy, pąsów, księżycowych lilii. Kupcy nawołują, a w środku tego zgiełku… Lance.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Zbroja błyszczy. Lance stoi przy straganie pełnym kwiatów, sztywno jakby negocjował traktat wojenny z bukietem z piwonii. W ręce trzyma różę i... nie wygląda na przekonanego.",
+                  "sprite": "",
+                  "background": ""
+              },
+              {
+                  "speaker": "Sprzedawczyni",
+                  "text": "No dalej, kochanieńki. Nie stój tak, jakbyś miał za chwilę złożyć przysięgę śmierci. Kwiaty są dla żywych!",
+                  "sprite": "FlowerVendor",
+                  "background": ""
+              },
+              {
+                  "speaker": "Lance",
+                  "text": "Nie wiem, co… pasuje. To dla kogoś, kto... Nie jestem dobry w takich rzeczach.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„Nie wiedziałam, że rycerze też bywają onieśmieleni przez florystykę.”",
+                          "nextId": "flower_market_2"
+                      },
+                      {
+                          "text": "„Jeśli to kwiaty dla mnie, to… może powinny mieć ciernie?”",
+                          "nextId": "flower_market_2"
+                      },
+                      {
+                          "text": "„Bukiet? Na kogoś zasłużonego… czy na próbę zadośćuczynienia?”",
+                          "nextId": "flower_market_2"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "flower_market_2",
+          "background": "flower_market_late_afternoon",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Lance",
+                  "text": "(odwraca się gwałtownie, lekko zaskoczony — ale nie zdenerwowany) Nie powiem, że dla ciebie. Bo wtedy... powiesz coś zabawnego i rozbroisz mnie całkowicie.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„To trochę niesprawiedliwe, bo ja właśnie przyszłam po twój uśmiech, a nie mam żadnego miecza.”",
+                          "nextId": "flower_market_3"
+                      },
+                      {
+                          "text": "„Powiedz, że dla mnie. Przynajmniej raz chcę wygrać bez potyczki.”",
+                          "nextId": "flower_market_3"
+                      },
+                      {
+                          "text": "„Skoro boisz się, że cię rozbroję, może sam mnie podeprzesz jakimś komplementem?”",
+                          "nextId": "flower_market_3"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "flower_market_3",
+          "background": "flower_market_late_afternoon",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Lance",
+                  "text": "(ledwo zauważalny uśmiech, który mógłby wywołać małe trzęsienie ziemi w sercu kogoś mniej odpornie romantycznego) Jesteś… jak ten targ. Za dużo zapachów, za dużo kolorów, za dużo do ogarnięcia. Ale nie mogę się od ciebie odsunąć.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„Mam nadzieję, że nie porównujesz mnie do kapusty w doniczce.”",
+                          "nextId": "flower_market_4"
+                      },
+                      {
+                          "text": "„Czy to była... pochwała? Lance, czy ty właśnie flirciłeś?”",
+                          "nextId": "flower_market_4"
+                      },
+                      {
+                          "text": "„Za dużo do ogarnięcia? A mimo to tu stoisz. I trzymasz różę. Dla mnie?”",
+                          "nextId": "flower_market_4"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "flower_market_4",
+          "background": "flower_market_late_afternoon",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Lance",
+                  "text": "(cicho, prawie nieśmiało) Może nie znam się na kwiatach. Ale wiem, kiedy coś — lub ktoś — nie chce odejść z moich myśli.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Sprzedawczyni",
+                  "text": "Niech będzie na próbę, rycerzyku. Ale jeśli nie wrócisz z nowym uśmiechem na twarzy, to mi te kwiaty zwrócisz, rozumiesz?",
+                  "sprite": "FlowerVendor",
+                  "background": ""
+              },
+              {
+                  "speaker": "Lance",
+                  "text": "Proszę. Nie wiem, czy potrafię mówić tak pięknie jak te kwiaty pachną. Ale chciałem, żebyś wiedziała, że jesteś dla mnie czymś więcej… niż tylko chwilą przed walką.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Ty",
+                  "text": "",
+                  "sprite": "Gierek",
+                  "background": "",
+                  "choices": [
+                      {
+                          "text": "„Uwaga, ktoś właśnie trafił w moje serce — prosto i bez zbroi.”",
+                          "nextId": "flower_market_5"
+                      },
+                      {
+                          "text": "„Jeśli to miała być twoja wersja miłosnego poematu, Lance… to był bardzo skuteczny cios.”",
+                          "nextId": "flower_market_5"
+                      },
+                      {
+                          "text": "„Zachowam te kwiaty. I może… znajdę dla ciebie w zamian coś równie żywego. Może pocałunek?”",
+                          "nextId": "flower_market_5"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": "flower_market_5",
+          "background": "flower_market_late_afternoon",
+          "nextScene": "",
+          "lines": [
+              {
+                  "speaker": "Lance",
+                  "text": "(uśmiecha się delikatnie, a bukiet wciąż w jego ręce) Czasami słowa to za mało, żeby powiedzieć, co się czuje. Ale liczę, że te kwiaty będą mówiły za mnie.",
+                  "sprite": "Lance",
+                  "background": ""
+              },
+              {
+                  "speaker": "Narrator",
+                  "text": "Kwiaty trafiają w twoje ręce, a Lance, choć nieśmiały, oddala się z uśmiechem. Powietrze wokół was jest teraz pełne obietnic, jak zapach tych księżycowych róż.",
+                  "sprite": "",
+                  "background": ""
+              }
+          ]
+      }
   ]
 }

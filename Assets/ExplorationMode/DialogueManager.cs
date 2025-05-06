@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
     {
         loader = FindAnyObjectByType<DialogueLoader>();
         dialoguePanel.SetActive(false);
-        StartDialogue("ser_rozmowa");
+        StartDialogue("prolog");
     }
 
     public void StartDialogue(string id)
