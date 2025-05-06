@@ -1,5 +1,6 @@
 {
-  "spawnPoints": [
+    "waves": [
+  {"spawnPoints": [
     { "position": { "x": -14, "y": -6 }, "angleDegrees": 270, "delaySeconds": 0.3, "speed": 10 },
     { "position": { "x": -14, "y": -4 }, "angleDegrees": 270, "delaySeconds": 0.3, "speed": 10 },
     { "position": { "x": -14, "y": -2 }, "angleDegrees": 270, "delaySeconds": 0.3, "speed": 10 },
@@ -8,29 +9,25 @@
     { "position": { "x": -14, "y": 4 }, "angleDegrees": 270, "delaySeconds": 0.3, "speed": 10 },
     { "position": { "x": -14, "y": 6 }, "angleDegrees": 270, "delaySeconds": 0.3, "speed": 10 },
     
-    { "position": { "x": -15, "y": -8 }, "angleDegrees": 315, "delaySeconds": 2.0, "speed": 8 },
-    
-    { "position": { "x": -12, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.2, "speed": 11 },
+    { "position": { "x": -12, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.4, "speed": 11 },
     { "position": { "x": -8, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.2, "speed": 11 },
     { "position": { "x": -4, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.2, "speed": 11 },
     { "position": { "x": 0, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.2, "speed": 11 },
     { "position": { "x": 4, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.2, "speed": 11 },
     { "position": { "x": 8, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.2, "speed": 11 },
-    { "position": { "x": 12, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.2, "speed": 11 },
+    { "position": { "x": 12, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.2, "speed": 11 }
     
-    { "position": { "x": 15, "y": 8 }, "angleDegrees": 135, "delaySeconds": 1.5, "speed": 8 },
-    
-    { "position": { "x": 14, "y": 6 }, "angleDegrees": 90, "delaySeconds": 0.25, "speed": 12 },
+    ]},{
+        "spawnPoints": [  
+    { "position": { "x": 14, "y": 6 }, "angleDegrees": 90, "delaySeconds": 0.5, "speed": 12 },
     { "position": { "x": 14, "y": 4 }, "angleDegrees": 90, "delaySeconds": 0.25, "speed": 12 },
     { "position": { "x": 14, "y": 2 }, "angleDegrees": 90, "delaySeconds": 0.25, "speed": 12 },
     { "position": { "x": 14, "y": 0 }, "angleDegrees": 90, "delaySeconds": 0.25, "speed": 12 },
     { "position": { "x": 14, "y": -2 }, "angleDegrees": 90, "delaySeconds": 0.25, "speed": 12 },
     { "position": { "x": 14, "y": -4 }, "angleDegrees": 90, "delaySeconds": 0.25, "speed": 12 },
     { "position": { "x": 14, "y": -6 }, "angleDegrees": 90, "delaySeconds": 0.25, "speed": 12 },
-    
-    { "position": { "x": 15, "y": -8 }, "angleDegrees": 45, "delaySeconds": 2.0, "speed": 8 },
-    
-    { "position": { "x": -12, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.15, "speed": 9 },
+
+    { "position": { "x": -12, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.5, "speed": 9 },
     { "position": { "x": -10, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.15, "speed": 9 },
     { "position": { "x": -8, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.15, "speed": 9 },
     { "position": { "x": -6, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.15, "speed": 9 },
@@ -41,21 +38,19 @@
     { "position": { "x": 6, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.15, "speed": 9 },
     { "position": { "x": 8, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.15, "speed": 9 },
     { "position": { "x": 10, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.15, "speed": 9 },
-    { "position": { "x": 12, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.15, "speed": 9 },
-    
-    { "position": { "x": -15, "y": 9 }, "angleDegrees": 225, "delaySeconds": 2.5, "speed": 8 },
-    
-    { "position": { "x": -14, "y": 7 }, "angleDegrees": 260, "delaySeconds": 0.1, "speed": 13 },
+    { "position": { "x": 12, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.15, "speed": 9 }
+        ]},{
+    "spawnPoints": [    
+    { "position": { "x": -14, "y": 7 }, "angleDegrees": 260, "delaySeconds": 1, "speed": 13 },
     { "position": { "x": -14, "y": 5 }, "angleDegrees": 265, "delaySeconds": 0.1, "speed": 13 },
     { "position": { "x": -14, "y": 3 }, "angleDegrees": 270, "delaySeconds": 0.1, "speed": 13 },
     { "position": { "x": -14, "y": 1 }, "angleDegrees": 275, "delaySeconds": 0.1, "speed": 13 },
     { "position": { "x": -14, "y": -1 }, "angleDegrees": 280, "delaySeconds": 0.1, "speed": 13 },
     { "position": { "x": -14, "y": -3 }, "angleDegrees": 285, "delaySeconds": 0.1, "speed": 13 },
     { "position": { "x": -14, "y": -5 }, "angleDegrees": 290, "delaySeconds": 0.1, "speed": 13 },
-    { "position": { "x": -14, "y": -7 }, "angleDegrees": 295, "delaySeconds": 0.1, "speed": 13 },
-    
-    { "position": { "x": 15, "y": 9 }, "angleDegrees": 135, "delaySeconds": 2.0, "speed": 8 },
-    
+    { "position": { "x": -14, "y": -7 }, "angleDegrees": 295, "delaySeconds": 0.1, "speed": 13 }
+    ]},{
+        "spawnPoints": [    
     { "position": { "x": -13, "y": 8 }, "angleDegrees": 170, "delaySeconds": 0.2, "speed": 10 },
     { "position": { "x": -9, "y": 8 }, "angleDegrees": 175, "delaySeconds": 0.2, "speed": 10 },
     { "position": { "x": -5, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.2, "speed": 10 },
@@ -63,10 +58,8 @@
     { "position": { "x": 3, "y": 8 }, "angleDegrees": 190, "delaySeconds": 0.2, "speed": 10 },
     { "position": { "x": 7, "y": 8 }, "angleDegrees": 195, "delaySeconds": 0.2, "speed": 10 },
     { "position": { "x": 11, "y": 8 }, "angleDegrees": 200, "delaySeconds": 0.2, "speed": 10 },
-    
-    { "position": { "x": -15, "y": -9 }, "angleDegrees": 315, "delaySeconds": 2.0, "speed": 8 },
-    
-    { "position": { "x": -14, "y": -5 }, "angleDegrees": 315, "delaySeconds": 0.15, "speed": 11 },
+
+    { "position": { "x": -14, "y": -5 }, "angleDegrees": 315, "delaySeconds": 0.5, "speed": 11 },
     { "position": { "x": -12, "y": -7 }, "angleDegrees": 315, "delaySeconds": 0.15, "speed": 11 },
     { "position": { "x": -10, "y": -5 }, "angleDegrees": 315, "delaySeconds": 0.15, "speed": 11 },
     { "position": { "x": -8, "y": -7 }, "angleDegrees": 315, "delaySeconds": 0.15, "speed": 11 },
@@ -77,11 +70,10 @@
     { "position": { "x": 4, "y": -7 }, "angleDegrees": 315, "delaySeconds": 0.15, "speed": 11 },
     { "position": { "x": 6, "y": -5 }, "angleDegrees": 315, "delaySeconds": 0.15, "speed": 11 },
     { "position": { "x": 8, "y": -7 }, "angleDegrees": 315, "delaySeconds": 0.15, "speed": 11 },
-    { "position": { "x": 10, "y": -5 }, "angleDegrees": 315, "delaySeconds": 0.15, "speed": 11 },
-    
-    { "position": { "x": -15, "y": 9 }, "angleDegrees": 225, "delaySeconds": 1.5, "speed": 8 },
-    
-    { "position": { "x": -14, "y": 5 }, "angleDegrees": 225, "delaySeconds": 0.15, "speed": 11 },
+    { "position": { "x": 10, "y": -5 }, "angleDegrees": 315, "delaySeconds": 0.15, "speed": 11 }
+    ]},{ "spawnPoints": [
+
+    { "position": { "x": -14, "y": 5 }, "angleDegrees": 225, "delaySeconds": 0.5, "speed": 11 },
     { "position": { "x": -12, "y": 7 }, "angleDegrees": 225, "delaySeconds": 0.15, "speed": 11 },
     { "position": { "x": -10, "y": 5 }, "angleDegrees": 225, "delaySeconds": 0.15, "speed": 11 },
     { "position": { "x": -8, "y": 7 }, "angleDegrees": 225, "delaySeconds": 0.15, "speed": 11 },
@@ -92,11 +84,10 @@
     { "position": { "x": 2, "y": 5 }, "angleDegrees": 225, "delaySeconds": 0.15, "speed": 11 },
     { "position": { "x": 6, "y": 5 }, "angleDegrees": 225, "delaySeconds": 0.15, "speed": 11 },
     { "position": { "x": 8, "y": 7 }, "angleDegrees": 225, "delaySeconds": 0.15, "speed": 11 },
-    { "position": { "x": 10, "y": 5 }, "angleDegrees": 225, "delaySeconds": 0.15, "speed": 11 },
-    
-    { "position": { "x": 16, "y": 0 }, "angleDegrees": 90, "delaySeconds": 2.5, "speed": 8 },
-    
-    { "position": { "x": 14, "y": 7 }, "angleDegrees": 135, "delaySeconds": 0.2, "speed": 12 },
+    { "position": { "x": 10, "y": 5 }, "angleDegrees": 225, "delaySeconds": 0.15, "speed": 11 }
+    ]}, {
+    "spawnPoints": [
+    { "position": { "x": 14, "y": 7 }, "angleDegrees": 135, "delaySeconds": 0.4, "speed": 12 },
     { "position": { "x": 14, "y": 5 }, "angleDegrees": 135, "delaySeconds": 0.2, "speed": 12 },
     { "position": { "x": 14, "y": 3 }, "angleDegrees": 135, "delaySeconds": 0.2, "speed": 12 },
     { "position": { "x": 14, "y": 1 }, "angleDegrees": 135, "delaySeconds": 0.2, "speed": 12 },
@@ -104,10 +95,8 @@
     { "position": { "x": 14, "y": -3 }, "angleDegrees": 45, "delaySeconds": 0.2, "speed": 12 },
     { "position": { "x": 14, "y": -5 }, "angleDegrees": 45, "delaySeconds": 0.2, "speed": 12 },
     { "position": { "x": 14, "y": -7 }, "angleDegrees": 45, "delaySeconds": 0.2, "speed": 12 },
-    
-    { "position": { "x": 0, "y": 9 }, "angleDegrees": 180, "delaySeconds": 2.0, "speed": 8 },
-    
-    { "position": { "x": -13, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 13 },
+
+    { "position": { "x": -13, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.5, "speed": 13 },
     { "position": { "x": -11, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 12 },
     { "position": { "x": -9, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 11 },
     { "position": { "x": -7, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 10 },
@@ -119,11 +108,10 @@
     { "position": { "x": 7, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 10 },
     { "position": { "x": 9, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 11 },
     { "position": { "x": 11, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 12 },
-    { "position": { "x": 13, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 13 },
-    
-    { "position": { "x": 0, "y": -9 }, "angleDegrees": 0, "delaySeconds": 1.5, "speed": 8 },
-    
-    { "position": { "x": -13, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.1, "speed": 13 },
+    { "position": { "x": 13, "y": 8 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 13 }
+        ]},{
+    "spawnPoints": [    
+    { "position": { "x": -13, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.6, "speed": 13 },
     { "position": { "x": -11, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.1, "speed": 12 },
     { "position": { "x": -9, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.1, "speed": 11 },
     { "position": { "x": -7, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.1, "speed": 10 },
@@ -135,11 +123,10 @@
     { "position": { "x": 7, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.1, "speed": 10 },
     { "position": { "x": 9, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.1, "speed": 11 },
     { "position": { "x": 11, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.1, "speed": 12 },
-    { "position": { "x": 13, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.1, "speed": 13 },
-    
-    { "position": { "x": 0, "y": 10 }, "angleDegrees": 180, "delaySeconds": 3.0, "speed": 8 },
-    
-    { "position": { "x": -12, "y": 9 }, "angleDegrees": 190, "delaySeconds": 0.1, "speed": 10 },
+    { "position": { "x": 13, "y": -8 }, "angleDegrees": 0, "delaySeconds": 0.1, "speed": 13 }
+        ]}, {
+    "spawnPoints": [    
+    { "position": { "x": -12, "y": 9 }, "angleDegrees": 190, "delaySeconds": 0.6, "speed": 10 },
     { "position": { "x": -9, "y": 10 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 10 },
     { "position": { "x": -6, "y": 9 }, "angleDegrees": 170, "delaySeconds": 0.1, "speed": 10 },
     { "position": { "x": -3, "y": 10 }, "angleDegrees": 180, "delaySeconds": 0.1, "speed": 10 },
@@ -163,10 +150,9 @@
     
     { "position": { "x": 0, "y": -10 }, "angleDegrees": 0, "delaySeconds": 0.0, "speed": 8 },
     { "position": { "x": 0, "y": -10 }, "angleDegrees": 0, "delaySeconds": 0.5, "speed": 10 },
-    { "position": { "x": 0, "y": -10 }, "angleDegrees": 0, "delaySeconds": 0.5, "speed": 12 },
-    
-    { "position": { "x": -15, "y": 9 }, "angleDegrees": 225, "delaySeconds": 2.5, "speed": 10 },
-    
+    { "position": { "x": 0, "y": -10 }, "angleDegrees": 0, "delaySeconds": 0.5, "speed": 12 }
+        ]}, {
+    "spawnPoints": [
     { "position": { "x": 0, "y": 9 }, "angleDegrees": 180, "delaySeconds": 0.05, "speed": 13 },
     { "position": { "x": 3, "y": 8 }, "angleDegrees": 150, "delaySeconds": 0.05, "speed": 13 },
     { "position": { "x": 6, "y": 7 }, "angleDegrees": 120, "delaySeconds": 0.05, "speed": 13 },
@@ -187,5 +173,6 @@
     { "position": { "x": -9, "y": 6 }, "angleDegrees": 270, "delaySeconds": 0.05, "speed": 13 },
     { "position": { "x": -6, "y": 7 }, "angleDegrees": 240, "delaySeconds": 0.05, "speed": 13 },
     { "position": { "x": -3, "y": 8 }, "angleDegrees": 210, "delaySeconds": 0.05, "speed": 13 }
-  ]
+  ]}
+    ]
 }

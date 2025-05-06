@@ -94,13 +94,14 @@ public class ProjectileSpawner : MonoBehaviour
         foreach (var data in spawnPoints)
         {
             var holder = new GameObject("Shooter");
-            holder.transform.SetParent(transform, worldPositionStays: true);
-            holder.transform.position = data.position;
+            holder.transform.SetParent(transform, worldPositionStays: false);
+            holder.transform.localPosition = data.position;
+
             holder.AddComponent<DestroyWhenEmpty>();
 
             var projGo = Instantiate(
                 projectilePrefab,
-                data.position,
+                holder.transform.position,
                 Quaternion.identity,
                 holder.transform
             );
