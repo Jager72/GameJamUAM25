@@ -1,0 +1,660 @@
+{
+  "dialogue": [
+    {
+      "id": "SyskaAtak",
+      "background": "",
+      "nextScene": "",
+      "lines": [
+        {
+          "speaker": "Syśka",
+          "text": "Masz urok zbłąkanego kucyka. Trochę żałosny, trochę uroczy, bardzo zgubiony.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Och, słodki jesteś. Jak zatruty miód.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Flirtujesz jak ktoś, kto uczył się z listów gończych.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Twoje teksty są jak moje sny — niepokojąco głupie i jakoś… działają.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Zastanawiam się, czy twoje ego ma osobną sakiewkę.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Z tobą mogłabym spędzić wieczór. Pod warunkiem, że będziesz mówił rzadko, a wyglądał często.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Lubię typów takich jak ty. Łatwo się z nich śmiać, trudno zapomnieć.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Nie wiesz jeszcze, czy masz do czynienia z femme fatale czy socjopatką. To będzie zabawne.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Jeśli jesteś bohaterem, to ja jestem szczoteczką do zbroi. Często ignorowaną, ale niezbędną.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Nie muszę cię ranić. Wystarczy, że pozwolę ci mówić.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Ty naprawdę wierzysz, że jesteś uroczy, prawda? Fascynujące.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Nie wiem, czy masz plan, czy po prostu żyjesz improwizacją. Ale dobrze ci idzie udawanie.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Słuchanie cię to jak czytanie poezji pisaną w pośpiechu. Niby chaos, ale człowiek nie może przestać.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Masz tyle uroku, że aż podejrzane. Co próbujesz ukryć?",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Oj, próbujesz być tajemniczy? Wiesz, że to działa tylko, gdy się nie papla non stop?",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Gdybyś miał monetę za każde nieudane zagranie, to mógłbyś mnie zaprosić na lepszą kolację.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Nie jestem pewna, czy to twój flirt, czy efekt uboczny księżycowego ciastka.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Zadziwiające. Twój brak taktu wygląda jak taktyka.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Jeśli to twój sposób na podryw, to musisz mieć ogromne szczęście. Lub ofiary z niskimi standardami.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Gdybyś był książką, rzuciłabym okiem... ale sprawdziłabym najpierw recenzje.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Nie wiem, czy jesteś odważny, czy po prostu głupi. Ale przy tobie nawet cienie są mniej samotne.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Twoje teksty są słodkie jak ciastko… i mam ochotę na jeszcze jedno.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Jeśli chcesz mnie oczarować, musisz się bardziej postarać. Albo… nie przestawać.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Nie lubię być oceniana po okładce… ale chętnie pozwolę ci mnie przeczytać.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Wiesz, że w świątyni zdrady miłość też się liczy? Właśnie testuję tę teorię.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Mam dyplom z intryg i łamania serc. Ale to z tobą chcę zrobić magistra.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Nie jestem typem, który ufa. Ale wyglądasz na warte/a grzechu.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "W moim rodzie wszyscy są wojownikami. Ja walczę… żeby nie całować cię już teraz.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Nie jestem twoim przeznaczeniem. Jestem wyborem. Bardzo kuszącym wyborem.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Przysięgałam, że nie dam się złamać. A ty mnie wyginasz jak przecinek.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Ciekawość to pierwszy krok do biblioteki. A potem… do mojego serca.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Ojciec mnie ostrzegał przed ludźmi jak ty. Więc czemu to takie ekscytujące?",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Nie szukam odkupienia. Szukam kogoś, kto dotrzyma mi kroku.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "To nie magia. To chemia. I robi się niebezpiecznie gęsta.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Jeśli masz pytanie, zadaj je. Ale ostrzegam — mogę odpowiedzieć pocałunkiem.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Zawsze myślałam, że zakochanie się to strata kontroli. I cholera… masz rację.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Znasz się na elfach? Bo twój urok działa nawet na arystokrację.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "W mojej głowie miałam plan. A teraz… tylko twoją twarz.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Lubię, gdy ktoś mnie prowokuje. Ale ty robisz to wyjątkowo ładnie.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Nie jestem łatwa do zdobycia. Ale ty już wygrywasz punkty.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Wiesz, że romantyczne gesty są passé? Ale twój uśmiech — zupełnie retro.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Miałam nie flirtować. A teraz spisuję sonet w myślach.",
+          "sprite": "",
+          "background": ""
+        },
+        {
+          "speaker": "Syśka",
+          "text": "Jeśli to gra o serca… to chyba wpadłam w twoją pułapkę.",
+          "sprite": "",
+          "background": ""
+        }
+      ]
+    },
+    {
+        "id": "SyskaFail",
+        "background": "",
+        "nextScene": "",
+        "lines": [
+            {
+              "speaker": "Ty",
+              "text": "Nie wiem, co ostrzejsze — twój język, czy ciastko z wczoraj.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Masz spojrzenie jak zwiadowca podatkowy. Wiem, że coś liczysz.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Z tobą flirtowanie to jak taniec z jeżem. Bez butów. I z alergią.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Twoje komplementy są jak zaklęcia — zawsze podejrzewam efekt uboczny.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "To już drugi raz, gdy cię spotykam, a jeszcze nie zginąłem. Statystyka robi się niepokojąca.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Ostrzegam, potrafię gotować. Zazwyczaj kłopoty.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Nie jestem pewien, czy próbujesz mnie uwieść, czy przekląć. Ale w obu przypadkach — kontynuuj.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Jeśli to przekomarzanie to gra wstępna, potrzebuję zbroi +5 do samooceny.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Wyglądasz jak ktoś, kto raz zabił plotkę tylko spojrzeniem.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Nie jestem czarodziejem, ale sprawiasz, że moje statystyki rosną.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Jeśli miałbym za każdym razem zadrżeć od twojego spojrzenia... to się chyba uzależnię.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Znasz tysiące języków, a i tak w twoim milczeniu jest najwięcej emocji.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Czy twoje oko zawsze tak błyszczy, czy tylko wtedy, gdy udajesz, że ci nie zależy?",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Wiem, że wiesz, że wiem, że ci się podobam. A teraz powiedz to po elficku.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Gdyby sarkazm był bronią, już dawno leżałbym w kałuży emocjonalnej porażki. Ale jakoś... chcesz mnie dobijać dalej?",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Twój bóg cieni musi mieć niezły ubaw, widząc jak cię oświetlam swoim urokiem.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Jak długo studiowałaś, by tak perfekcyjnie ignorować kogoś, kto cię interesuje?",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Wiem, że udajesz niedostępną, ale twój uśmiech już mnie zdradził.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Znasz tyle zaklęć, a i tak jednym spojrzeniem zrobiłaś ze mnie durnia.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Jesteś jak zakazana księga – wiem, że nie powinienem… ale cholera, nie mogę się powstrzymać.",
+              "sprite": "",
+              "background": ""
+            }
+          ]
+    },
+    {
+        "id": "SyskaWin",
+        "background": "",
+        "nextScene": "",
+        "lines": [
+            {
+              "speaker": "Ty",
+              "text": "Masz urok zbłąkanego kucyka. Trochę żałosny, trochę uroczy, bardzo zgubiony.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Och, słodki jesteś. Jak zatruty miód.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Flirtujesz jak ktoś, kto uczył się z listów gończych.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Twoje teksty są jak moje sny — niepokojąco głupie i jakoś… działają.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Zastanawiam się, czy twoje ego ma osobną sakiewkę.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Z tobą mogłabym spędzić wieczór. Pod warunkiem, że będziesz mówił rzadko, a wyglądał często.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Lubię typów takich jak ty. Łatwo się z nich śmiać, trudno zapomnieć.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Nie wiesz jeszcze, czy masz do czynienia z femme fatale czy socjopatką. To będzie zabawne.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Jeśli jesteś bohaterem, to ja jestem szczoteczką do zbroi. Często ignorowaną, ale niezbędną.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Nie muszę cię ranić. Wystarczy, że pozwolę ci mówić.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Ty naprawdę wierzysz, że jesteś uroczy, prawda? Fascynujące.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Nie wiem, czy masz plan, czy po prostu żyjesz improwizacją. Ale dobrze ci idzie udawanie.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Słuchanie cię to jak czytanie poezji pisaną w pośpiechu. Niby chaos, ale człowiek nie może przestać.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Masz tyle uroku, że aż podejrzane. Co próbujesz ukryć?",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Oj, próbujesz być tajemniczy? Wiesz, że to działa tylko, gdy się nie papla non stop?",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Gdybyś miał monetę za każde nieudane zagranie, to mógłbyś mnie zaprosić na lepszą kolację.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Nie jestem pewna, czy to twój flirt, czy efekt uboczny księżycowego ciastka.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Zadziwiające. Twój brak taktu wygląda jak taktyka.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Jeśli to twój sposób na podryw, to musisz mieć ogromne szczęście. Lub ofiary z niskimi standardami.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Gdybyś był książką, rzuciłabym okiem... ale sprawdziłabym najpierw recenzje.",
+              "sprite": "",
+              "background": ""
+            },
+            {
+              "speaker": "Ty",
+              "text": "Nie musisz mnie chronić, Lance. Ale jeśli musisz – to nie zapomnij też czasem patrzeć mi w oczy.",
+              "sprite": "",
+              "background": ""
+            }
+          ]
+    },
+    {
+        "id": "LanceWin",
+        "background": "",
+        "nextScene": "",
+        "lines": [
+            { "speaker": "Ty", "text": "Z twoją postawą to nawet milczenie brzmi jak komplement.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Wiesz, nie musisz mówić wiele. Wystarczy, że stoisz blisko.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Twoja zbroja lśni. Ale nie tak bardzo jak twoja lojalność.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Z takim spojrzeniem mógłbyś przeganiać chmury… albo przyciągać serca.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Mam wrażenie, że za każdym twoim westchnieniem kryje się legenda. Chciałbym ją usłyszeć… albo zostać jej częścią.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Z tobą nawet śmierć wydaje się mieć sens. Ale wolałbym jednak… pożyć.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "W twoich oczach jest więcej odwagi niż w całej mojej karcie postaci.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie wiem, kto cię zranił. Ale mam dobrą apteczkę i jeszcze lepsze intencje.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Zawsze jesteś taki poważny, czy tylko gdy ktoś zaczyna cię lubić?", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie szukam bohatera. Ale jeśli nim jesteś, to… trochę za późno, już się zainteresowałem.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Jesteś jak opancerzona melancholia. I właśnie się we mnie wbiła.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Twoje rany robią z ciebie legendę. Ale to twoje milczenie mnie hipnotyzuje.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie mówię, że masz mnie nosić na rękach. Ale z tą siłą… mógłbyś.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Znam takie spojrzenie. Nosi je ktoś, kto myśli, że nie zasługuje na szczęście. Pozwól, że się nie zgodzę.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Masz aurę ‘zostaw mnie’, a ja mam instynkt ‘muszę wiedzieć więcej’.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Mówią, że nie jesteś typem romantyka. Cóż… wyzwanie przyjęte.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Może nie potrzebujesz ratunku… Ale może potrzebujesz kogoś, kto zostanie.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie pytam, co cię złamało. Ale mogę być tym, kto ci przypomni, że jeszcze oddychasz.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Jeśli chcesz zbudować mur — przyniosę cegły. Ale tylko po to, żeby usiąść obok i rozmawiać godzinami.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie patrz tak, jakbyś był sam. Już nie jesteś.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Masz aurę ‘nie podchodź’, ale ja słyszę ‘zostań jeszcze chwilę’.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Czy to ty, czy Festiwal robi mi takie zamieszanie w sercu?", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Jestem tu od kilku godzin, a już znalazłem powód, żeby nie chcieć wyjeżdżać.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie wiem, czy to magia… ale z tobą wszystko wydaje się trochę bardziej realne.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Czasem w życiu pojawia się ktoś, kto przerywa ci samotność. Dziś to byłeś ty.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Wiem, że nie wierzysz w przeznaczenie. Ale co jeśli ja zostałem stworzony, żeby cię rozśmieszyć?", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Twoje milczenie mówi więcej niż niejedna ballada. A ja chcę ją usłyszeć.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie musisz mnie ratować. Ale możesz mnie poprowadzić do kogoś, kto cię w końcu zrozumie.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "W twoich oczach jest więcej smutku niż w moim koszyku po zakupach. Pozwól, że je wypełnię czymś lżejszym.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Twój honor jest ciężki, ale... może razem go trochę poniesiemy?", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Wiesz, twoja zbroja błyszczy... ale to ty przyciągasz uwagę.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie jestem czarodziejem, ale mam wrażenie, że właśnie rzuciłeś na mnie ‘Przyciąganie emocjonalne 9. poziomu’.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Gdyby spojrzenia były mieczami… twoje właśnie rozbroiło mój zdrowy rozsądek.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Lance, wiem, że jesteś tu tylko przejazdem. Ale co jeśli ci powiem, że czeka tu na ciebie coś więcej?", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie chcę cię naprawiać. Chcę tylko być obok, gdy się nie poddajesz.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Ktoś powinien ostrzec mnie, że w Monstadzie można się zakochać szybciej niż znaleźć nocleg.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Zwykle nie angażuję się emocjonalnie przed drugą randką… ale ty wszystko komplikujesz.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Zaczynałem ten dzień z misją. Teraz mam ochotę rzucić wszystko i zostać tu z tobą.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "W tej grze o serca… chyba właśnie przegrałem z tobą.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Festiwal dopiero się zaczyna, ale moje serce już ma zwycięzcę.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Czasem myślę, że jestem tu po coś większego. Ale potem ty się odzywasz i… zgubiłem wątek.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie wiem, czy jesteś moim przeznaczeniem. Ale pasujesz do niego jak ulubione buty do porannego patrolu.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Znasz to uczucie, kiedy spojrzysz komuś w oczy i… nagle twoja linia dialogowa znika? No właśnie.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie wiem, czy zasługuję na twój czas. Ale jeśli masz go chwilę, chciałbym na niego zasłużyć.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie jestem mistrzem retoryki… ale chyba właśnie powiedziałem ci, że cię lubię.", "sprite": "", "background": "" }
+          ]
+    },
+    {
+        "id": "LanceFail",
+        "background": "",
+        "nextScene": "",
+        "lines": [
+            { "speaker": "Ty", "text": "Znasz to uczucie, gdy ktoś patrzy na ciebie jak na śmiecia, ale z honorem? Bo właśnie to robisz.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Masz minę jakbyś przegrał debatę z kozą. I to nie po raz pierwszy.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Z takim spojrzeniem powinieneś wygrać Festiwal Samotności.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Jeśli cię nie lubię, to dlatego, że moje lustro nie patrzy na mnie tak surowo.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Twoje milczenie mówi wiele. Głównie, że muszę mówić za dwóch.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Masz aurę szlachetnego smutku. Jakby twoja dusza miała własne konto na Twitterze z cytatami z dramatów.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Czy twoja zbroja waży więcej niż twoje poczucie humoru, czy po prostu tak ją nosisz?", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Słyszałem o kamiennych twarzach. Ty wyglądasz, jakbyś z nimi przegrał pojedynek.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Jeśli twoje spojrzenie mogło zabić, już bym był nieboszczykiem… albo twoim kolegą.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Z taką powagą to ty pewnie nawet w dzieciństwie bawiłeś się w księgowego.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Zawsze jesteś taki ponury, czy tylko jak ktoś zaczyna z tobą flirtować?", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nieźle machasz mieczem… ale widzę, że w żartach jesteś jeszcze bardziej niebezpieczny.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Zastanawiam się, czy masz więcej blizn po bitwach, czy po relacjach międzyludzkich.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Ty chyba nawet śniadanie zjadasz z honorem i wewnętrznym cierpieniem.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Jeśli to twoja wersja uśmiechu, to proponuję ćwiczyć przy lustrze. Albo przy mnie.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Wiesz, jesteś jak stal. Zimny, twardy, ale jak dobrze się przyłoży… może się rozgrzejesz.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie wiem, co bardziej mnie przeraża — twoja powaga, czy to, jak bardzo mi się podoba.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Chciałem tylko powiedzieć, że nawet twoje ‘milczenie pełne pogardy’ brzmi jak flirt.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Mów dalej takim tonem, a zaraz się w tobie zakocham. Albo przynajmniej zadurzę. Trochę.", "sprite": "", "background": "" },
+            { "speaker": "Ty", "text": "Nie musisz mnie chronić, Lance. Ale jeśli musisz – to nie zapomnij też czasem patrzeć mi w oczy.", "sprite": "", "background": "" }
+          ]
+    },
+    {
+        "id": "LanceAtak",
+        "background": "",
+        "nextScene": "",
+        "lines":  [
+            { "speaker": "Lance", "text": "Z twoją postawą to nawet milczenie brzmi jak komplement.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Wiesz, nie musisz mówić wiele. Wystarczy, że stoisz blisko.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Twoja zbroja lśni. Ale nie tak bardzo jak twoja lojalność.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Z takim spojrzeniem mógłbyś przeganiać chmury… albo przyciągać serca.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Mam wrażenie, że za każdym twoim westchnieniem kryje się legenda. Chciałbym ją usłyszeć… albo zostać jej częścią.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Z tobą nawet śmierć wydaje się mieć sens. Ale wolałbym jednak… pożyć.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "W twoich oczach jest więcej odwagi niż w całej mojej karcie postaci.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie wiem, kto cię zranił. Ale mam dobrą apteczkę i jeszcze lepsze intencje.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Zawsze jesteś taki poważny, czy tylko gdy ktoś zaczyna cię lubić?", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie szukam bohatera. Ale jeśli nim jesteś, to… trochę za późno, już się zainteresowałem.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Jesteś jak opancerzona melancholia. I właśnie się we mnie wbiła.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Twoje rany robią z ciebie legendę. Ale to twoje milczenie mnie hipnotyzuje.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie mówię, że masz mnie nosić na rękach. Ale z tą siłą… mógłbyś.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Znam takie spojrzenie. Nosi je ktoś, kto myśli, że nie zasługuje na szczęście. Pozwól, że się nie zgodzę.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Masz aurę ‘zostaw mnie’, a ja mam instynkt ‘muszę wiedzieć więcej’.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Mówią, że nie jesteś typem romantyka. Cóż… wyzwanie przyjęte.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Może nie potrzebujesz ratunku… Ale może potrzebujesz kogoś, kto zostanie.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie pytam, co cię złamało. Ale mogę być tym, kto ci przypomni, że jeszcze oddychasz.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Jeśli chcesz zbudować mur — przyniosę cegły. Ale tylko po to, żeby usiąść obok i rozmawiać godzinami.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie patrz tak, jakbyś był sam. Już nie jesteś.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Masz aurę ‘nie podchodź’, ale ja słyszę ‘zostań jeszcze chwilę’.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Czy to ty, czy Festiwal robi mi takie zamieszanie w sercu?", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Jestem tu od kilku godzin, a już znalazłem powód, żeby nie chcieć wyjeżdżać.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie wiem, czy to magia… ale z tobą wszystko wydaje się trochę bardziej realne.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Czasem w życiu pojawia się ktoś, kto przerywa ci samotność. Dziś to byłeś ty.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Wiem, że nie wierzysz w przeznaczenie. Ale co jeśli ja zostałem stworzony, żeby cię rozśmieszyć?", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Twoje milczenie mówi więcej niż niejedna ballada. A ja chcę ją usłyszeć.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie musisz mnie ratować. Ale możesz mnie poprowadzić do kogoś, kto cię w końcu zrozumie.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "W twoich oczach jest więcej smutku niż w moim koszyku po zakupach. Pozwól, że je wypełnię czymś lżejszym.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Twój honor jest ciężki, ale... może razem go trochę poniesiemy?", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Wiesz, twoja zbroja błyszczy... ale to ty przyciągasz uwagę.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie jestem czarodziejem, ale mam wrażenie, że właśnie rzuciłeś na mnie ‘Przyciąganie emocjonalne 9. poziomu’.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Gdyby spojrzenia były mieczami… twoje właśnie rozbroiło mój zdrowy rozsądek.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Lance, wiem, że jesteś tu tylko przejazdem. Ale co jeśli ci powiem, że czeka tu na ciebie coś więcej?", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie chcę cię naprawiać. Chcę tylko być obok, gdy się nie poddajesz.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Ktoś powinien ostrzec mnie, że w Monstadzie można się zakochać szybciej niż znaleźć nocleg.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Zwykle nie angażuję się emocjonalnie przed drugą randką… ale ty wszystko komplikujesz.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Zaczynałem ten dzień z misją. Teraz mam ochotę rzucić wszystko i zostać tu z tobą.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "W tej grze o serca… chyba właśnie przegrałem z tobą.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Festiwal dopiero się zaczyna, ale moje serce już ma zwycięzcę.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Czasem myślę, że jestem tu po coś większego. Ale potem ty się odzywasz i… zgubiłem wątek.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie wiem, czy jesteś moim przeznaczeniem. Ale pasujesz do niego jak ulubione buty do porannego patrolu.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Znasz to uczucie, kiedy spojrzysz komuś w oczy i… nagle twoja linia dialogowa znika? No właśnie.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie wiem, czy zasługuję na twój czas. Ale jeśli masz go chwilę, chciałbym na niego zasłużyć.", "sprite": "", "background": "" },
+            { "speaker": "Lance", "text": "Nie jestem mistrzem retoryki… ale chyba właśnie powiedziałem ci, że cię lubię.", "sprite": "", "background": "" }
+          ]
+    }
+  ]
+}
