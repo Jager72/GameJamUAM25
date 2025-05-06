@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f8cbbb8d34888074c99c58aaf388a17f
+guid: 3692f0c85a29b9249ab2dd1bb97d76cb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7962203911933517093
-    second: DialogueOutlines_0
+      213: 4247967663267866781
+    second: pocisk_szybki3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DialogueOutlines_0
+      name: pocisk_szybki3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 324
+        width: 17
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd22af74ab1908190800000000000000
-      internalID: -7962203911933517093
+      spriteID: d986d624510d3fa30800000000000000
+      internalID: 4247967663267866781
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      DialogueOutlines_0: -7962203911933517093
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
