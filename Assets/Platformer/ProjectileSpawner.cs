@@ -1,7 +1,9 @@
-using UnityEngine;
+﻿using System;
 using System.IO;
-using UnityEngine.InputSystem;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
 [System.Serializable]
 public class SpawnData
@@ -13,53 +15,88 @@ public class SpawnData
 }
 
 [System.Serializable]
-public class SpawnDataList
+public class WaveData
 {
     public SpawnData[] spawnPoints;
+}
+
+[System.Serializable]
+public class WaveDataList
+{
+    public WaveData[] waves;
 }
 
 public class ProjectileSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab;
-    private SpawnData[] spawnPoints;
     [SerializeField] private string jsonFileName = "spawnData.json";
+
+    private WaveData[] waves;
 
     private void Awake()
     {
-        // read JSON from StreamingAssets
-        var path = Path.Combine(Application.streamingAssetsPath, jsonFileName);
+        // load waves from JSON
+        string path = Path.Combine(Application.streamingAssetsPath, jsonFileName);
         if (File.Exists(path))
         {
-            var json = File.ReadAllText(path);
-            spawnPoints = JsonUtility.FromJson<SpawnDataList>(json).spawnPoints;
+            string json = File.ReadAllText(path);
+            waves = JsonUtility.FromJson<WaveDataList>(json).waves;
         }
         else
         {
             Debug.LogWarning($"Could not find spawn JSON at: {path}");
+            waves = new WaveData[0];
         }
     }
 
     private void Start()
     {
-        // spawn projectiles at start
-        StartCoroutine(SpawnProjectiles());
+        StartCoroutine(RunAllWaves());
     }
 
     void Update()
     {
-        // e.g. press Left control to fire
         if (Keyboard.current.leftCtrlKey.wasPressedThisFrame)
-            StartCoroutine(SpawnProjectiles());
+        {
+            StopAllCoroutines();
+            StartCoroutine(RunAllWaves());
+        }
     }
 
-    private IEnumerator SpawnProjectiles()
+    private IEnumerator RunAllWaves()
     {
+        for (int i = 0; i < waves.Length; i++)
+        {
+            // Reset flag for this wave
+            bool hitInWave = false;
+            // Subscribe to the Projectile event
+            Action onHit = () => hitInWave = true;
+            Projectile.OnPlayerHit += onHit;
+
+            // Spawn & wait for wave to finish
+            yield return StartCoroutine(SpawnWave(waves[i].spawnPoints));
+
+            // Unsubscribe
+            Projectile.OnPlayerHit -= onHit;
+
+            // Log result
+            if (hitInWave)
+                Debug.Log($"Wave {i + 1}: Player was hit!");
+            else
+                Debug.Log($"Wave {i + 1}: Player was safe!");
+        }
+    }
+
+    private IEnumerator SpawnWave(SpawnData[] spawnPoints)
+    {
+        var holders = new List<GameObject>();
+
         foreach (var data in spawnPoints)
         {
             var holder = new GameObject("Shooter");
+            holder.transform.SetParent(transform, worldPositionStays: true);
             holder.transform.position = data.position;
             holder.AddComponent<DestroyWhenEmpty>();
-            holder.transform.SetParent(transform);
 
             var projGo = Instantiate(
                 projectilePrefab,
@@ -74,8 +111,11 @@ public class ProjectileSpawner : MonoBehaviour
                 proj.SetSpeed(data.speed);
             }
 
-            // wait before next spawn
-                yield return new WaitForSeconds(data.delaySeconds);
+            holders.Add(holder);
+            yield return new WaitForSeconds(data.delaySeconds);
         }
+
+        // Wait until every holder has self‐destroyed
+        yield return new WaitUntil(() => holders.TrueForAll(h => h == null));
     }
 }
