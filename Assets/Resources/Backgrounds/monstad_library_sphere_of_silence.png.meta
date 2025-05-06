@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 873009fe2960311498688696fc516759
+guid: 358f4eb9191c2644da9cfb386ad5ad30
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5339213819138341042
-    second: gracz_neutralny_0
+      213: -3818767992891286401
+    second: monstad_library_sphere_of_silence_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gracz_neutralny_0
+      name: monstad_library_sphere_of_silence_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
+        width: 740
+        height: 415
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e470762e15d47e5b0800000000000000
-      internalID: -5339213819138341042
+      spriteID: f7c55104eb2010bc0800000000000000
+      internalID: -3818767992891286401
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      gracz_neutralny_0: -5339213819138341042
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
