@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pocisk_szybki2_0: 231631950804482890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
