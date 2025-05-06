@@ -1,0 +1,7 @@
+{
+  "spawnPoints": [
+    { "position": { "x":  0, "y":  0 }, "angleDegrees":  0 },
+    { "position": { "x": 10, "y":  5 }, "angleDegrees": 45 },
+    { "position": { "x":-10, "y": -3 }, "angleDegrees":90 }
+  ]
+}
