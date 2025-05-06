@@ -67,6 +67,7 @@ public class ProjectileSpawner : MonoBehaviour
     {
         for (int i = 0; i < waves.Length; i++)
         {
+            Debug.Log($"Wave {i + 1}: Starting...");
             // Reset flag for this wave
             bool hitInWave = false;
             // Subscribe to the Projectile event
@@ -81,9 +82,14 @@ public class ProjectileSpawner : MonoBehaviour
 
             // Log result
             if (hitInWave)
-                Debug.Log($"Wave {i + 1}: Player was hit!");
+            {
+                i--;
+                Debug.Log($"Wave {i + 1}: Player was hit! retrying...");
+            }
             else
+            {
                 Debug.Log($"Wave {i + 1}: Player was safe!");
+            }
         }
     }
 
