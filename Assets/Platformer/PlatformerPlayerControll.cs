@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -42,7 +43,10 @@ public class PlatformerPlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerInput playerInput;
     private float moveInput;
-    private float facingDirection = 1f;  // +1 = right, -1 = left
+    private float facingDirection = 1f; // +1 = right, -1 = left
+
+    // Particle effect on dash
+    private ParticleSystem woosh;
 
     // timers & state
     private float coyoteTimeCounter;
@@ -57,6 +61,12 @@ public class PlatformerPlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
+        // Find the Woosh particle system in children
+        var wooshTransform = transform.Find("Woosh");
+        if (wooshTransform != null)
+            woosh = wooshTransform.GetComponent<ParticleSystem>();
+        else
+            Debug.LogWarning("Woosh particle system not found as child of player.");
     }
 
     void Update()
@@ -136,15 +146,30 @@ public class PlatformerPlayerController : MonoBehaviour
         if (!value.isPressed || dashCooldownTimer > 0f)
             return;
 
-        // 1) Apply instantaneous dash impulse
+        // Apply instantaneous dash impulse
         rb.AddForce(Vector2.right * facingDirection * dashForce, ForceMode2D.Impulse);
 
-        // 2) Start cooldown & record time
+        // Start cooldown & record time
         dashCooldownTimer = dashCooldown;
         lastDashTime = Time.time;
 
-        // 3) Broadcast event so platforms can switch to trigger immediately
+        // Broadcast event for platforms
         OnDashEvent?.Invoke(dashThroughWindow);
+
+        // Play Woosh effect
+        if (woosh != null)
+        {
+            woosh.Play();
+            // Stop after window
+            StartCoroutine(StopWooshAfterDelay(dashThroughWindow));
+        }
+    }
+
+    private IEnumerator StopWooshAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if (woosh != null)
+            woosh.Stop();
     }
 
     void OnCollisionEnter2D(Collision2D col)
