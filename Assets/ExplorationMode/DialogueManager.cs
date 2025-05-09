@@ -20,6 +20,8 @@ public class DialogueManager : MonoBehaviour
     [Header("Choices UI")]
     public GameObject choicesPanel;
     public Button choiceButtonPrefab;
+    public GameObject BattleArenaGO;
+    public Image BattleArenaBackground;
 
     private DialogueLoader loader;
     private Dialogue currentDialogue;
@@ -32,6 +34,7 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        // Use FindObjectOfType for compatibility
         loader = FindAnyObjectByType<DialogueLoader>();
         if (loader == null)
         {
@@ -41,23 +44,32 @@ public class DialogueManager : MonoBehaviour
         }
 
         dialoguePanel.SetActive(false);
-        StartDialogue("steal");
+        StartDialogue("prolog");
     }
 
     public void StartDialogue(string id)
     {
         Debug.Log($"[DialogueManager] StartDialogue('{id}')");
 
+        // Stop any ongoing typing
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
             typingCoroutine = null;
         }
 
+        // Load dialogue data
         currentDialogue = loader.GetDialogue(id);
         if (currentDialogue == null)
         {
             Debug.LogError($"[DialogueManager] No dialogue found with id='{id}'");
+            EndDialogue();
+            return;
+        }
+        if (currentDialogue.lines == null || currentDialogue.lines.Length == 0)
+        {
+            Debug.LogWarning($"[DialogueManager] Dialogue '{id}' has no lines.");
+            EndDialogue();
             return;
         }
 
@@ -77,27 +89,39 @@ public class DialogueManager : MonoBehaviour
 
     public void NextLine()
     {
+        // Prevent advancing if still typing
         if (isTyping)
         {
             skipTyping = true;
             return;
         }
 
-        // If this is the last line in the dialogue
-        bool atLast = currentIndex >= currentDialogue.lines.Length - 1;
-        curLine = currentDialogue.lines[currentIndex];
-
-        // If no choices on this line and a nextId is defined, jump to that dialogue
-        if (atLast && (curLine.choices == null || curLine.choices.Length == 0)
-            && !string.IsNullOrEmpty(curLine.nextId))
+        // Guard against null dialogue or empty lines
+        if (currentDialogue == null || currentDialogue.lines == null || currentDialogue.lines.Length == 0)
         {
-            StartDialogue(curLine.nextId);
+            Debug.LogWarning("[DialogueManager] NextLine called but no dialogue is active or lines are empty.");
+            EndDialogue();
             return;
         }
 
-        // Otherwise, advance or end
+        // Determine if we're on the last line
+        bool atLast = currentIndex >= currentDialogue.lines.Length - 1;
+        curLine = currentDialogue.lines[currentIndex];
+
+        // If last line, no choices, and a nextId is defined, jump to next dialogue or battle
+        if (atLast && (curLine.choices == null || curLine.choices.Length == 0) && !string.IsNullOrEmpty(curLine.nextId))
+        {
+            choicesPanel.SetActive(false);
+            if (!string.IsNullOrEmpty(curLine.battle))
+                DoBattle(curLine.battle);
+            else
+                StartDialogue(curLine.nextId);
+            return; // exit without incrementing index
+        }
+
+        // Otherwise advance to the next line or end
         currentIndex++;
-        if (currentIndex < currentDialogue.lines.Length)
+        if (currentDialogue.lines != null && currentIndex < currentDialogue.lines.Length)
         {
             typingCoroutine = StartCoroutine(TypeLine());
         }
@@ -112,6 +136,14 @@ public class DialogueManager : MonoBehaviour
         isTyping = true;
         skipTyping = false;
 
+        // Safe guard: ensure line exists
+        if (currentDialogue == null || currentDialogue.lines == null || currentIndex < 0 || currentIndex >= currentDialogue.lines.Length)
+        {
+            Debug.LogWarning("[DialogueManager] TypeLine called with invalid index or dialogue.");
+            EndDialogue();
+            yield break;
+        }
+
         curLine = currentDialogue.lines[currentIndex];
         nameText.text = curLine.speaker;
         dialogueText.text = string.Empty;
@@ -122,11 +154,17 @@ public class DialogueManager : MonoBehaviour
             var sp = loader.GetPortrait(curLine.sprite);
             if (sp != null)
             {
+                Debug.Log(sp);
                 portraitImage.sprite = sp;
                 portraitImage.enabled = true;
+
             }
             else
                 Debug.LogWarning($"Portrait '{curLine.sprite}' not found");
+        }
+        else
+        {
+            portraitImage.enabled = false;
         }
 
         // background (per-line override)
@@ -171,7 +209,7 @@ public class DialogueManager : MonoBehaviour
 
     void OnChoiceSelected(string nextId)
     {
-        Debug.Log($"[DialogueManager] Choice clicked, nextId='{nextId}'");
+        Debug.Log($"[DialogueManager] Choice clicked, jumping to '{nextId}'");
         choicesPanel.SetActive(false);
         StartDialogue(nextId);
     }
@@ -181,7 +219,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         choicesPanel.SetActive(false);
 
-        if (!string.IsNullOrEmpty(currentDialogue.nextScene))
+        if (!string.IsNullOrEmpty(currentDialogue?.nextScene))
             SceneManager.LoadScene(currentDialogue.nextScene);
     }
 
@@ -194,5 +232,27 @@ public class DialogueManager : MonoBehaviour
         {
             NextLine();
         }
+    }
+    bool tempFlag = false;
+    void DoBattle(string battle)
+    {
+        if (tempFlag)
+        {
+            return;
+        }
+        tempFlag = true;
+        Debug.Log($"Doing Battle {battle}");
+        choicesPanel.SetActive(false);
+
+        Transform arenaT = BattleArenaGO.transform;
+        GameObject prefab = Resources.Load<GameObject>($"Scenes/{battle}");
+        if (prefab == null)
+        {
+            Debug.LogError($"DoBattle: could not find prefab 'Scenes/{battle}' in Resources.");
+            return;
+        }
+
+        BattleArenaBackground.gameObject.SetActive(true);
+        Instantiate(prefab, arenaT.position, arenaT.rotation);
     }
 }

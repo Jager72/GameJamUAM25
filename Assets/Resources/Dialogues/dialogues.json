@@ -7,29 +7,124 @@
         "lines": [
             {
                 "speaker": "Narrator",
-                "text": "DebugKlepa",
-                "sprite": "",
+                "text": "Wybierz walkę",
+                "sprite": "Narrator",
                 "background": ""
             },
             {
               "speaker": "Narrator",
               "text": "Wybór Klepa",
-              "sprite": "",
+              "sprite": "Narrator",
               "background": "",
-              "battle": "Lance1", 
               "choices": [
               {
-                  "text": "Jaskra",
-                  "nextId": "hackathon_city"
+                  "text": "Lance1",
+                  "nextId": "lanceBattle1"
               },
               {
-                  "text": "NieJaskra",
-                  "nextId": "hackathon_intro"
+                  "text": "Lance2",
+                  "nextId": "lanceBattle2"
+              },
+              {
+                  "text": "Syska1",
+                  "nextId": "syskaBattle1"
+              },
+              {
+                  "text": "Syska3",
+                  "nextId": "syskaBattle3"
               }
             ]
           }
         ]
     },
+    {
+        "id": "lanceBattle1",
+        "background": "temp1",
+        "nextScene": "",
+        "lines": [
+            {
+                "speaker": "Narrator",
+                "text": "Przygotuj się na walkę",
+                "sprite": "Narrator",
+                "background": ""
+            },
+            {
+                "speaker": "Narrator",
+                "text": "Wybór Klepa",
+                "sprite": "Narrator",
+                "background": "",
+                "battle": "Lance1",
+                          "nextId": "koniecDEMO"
+            }
+        ]
+    },
+    {
+        "id": "lanceBattle2",
+        "background": "temp1",
+        "nextScene": "",
+        "lines": [
+            {
+                "speaker": "Narrator",
+                "text": "Przygotuj się na walkę",
+                "sprite": "Narrator",
+                "background": ""
+            },
+            {
+                "speaker": "Narrator",
+                "text": "Wybór Klepa",
+                "sprite": "Narrator",
+                "background": "",
+                "battle": "Lance2",
+                          "nextId": "koniecDEMO"
+            }
+        ]
+    },
+    {
+        "id": "syskaBattle1",
+        "background": "temp1",
+        "nextScene": "",
+        "lines": [
+            {
+                "speaker": "Narrator",
+                "text": "Przygotuj się na walkę",
+                "sprite": "Narrator",
+                "background": ""
+            },
+            {
+                "speaker": "Narrator",
+                "text": "Wybór Klepa",
+                "sprite": "Narrator",
+                "background": "",
+                "battle": "Syska1",
+                          "nextId": "koniecDEMO"
+            }
+        ]
+    },
+    {
+        "id": "syskaBattle3",
+        "background": "temp1",
+        "nextScene": "",
+        "lines": [
+            {
+                "speaker": "Narrator",
+                "text": "Przygotuj się na walkę",
+                "sprite": "Narrator",
+                "background": ""
+            },
+            {
+                "speaker": "Narrator",
+                "text": "Wybór Klepa",
+                "sprite": "Narrator",
+                "background": "",
+                "battle": "Syska3",
+                          "nextId": "koniecDEMO"
+            }
+        ]
+    },
+
+
+
+
         {
             "id": "prolog",
             "background": "temp1",
@@ -44,55 +139,55 @@
                 {
                     "speaker": "Narrator",
                     "text": "Dawniej służył jako magiczne przymierze między rodami, dziś… to przede wszystkim spektakl. Ale nie stracił swej mocy.",
-                    "sprite": "",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
                     "speaker": "Narrator",
                     "text": "To właśnie wtedy ulice miasta rozświetlają się setkami lampionów, a powietrze wypełniają zapachy słodkich ciastek księżycowych i kwitnących nocnych lilii.",
-                    "sprite": "",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
                     "speaker": "Narrator",
                     "text": "Według legendy, samotni nie mogą wziąć udziału w Festiwalu. Każdy uczestnik musi odnaleźć partnera przed rozpoczęciem ceremonii — inaczej zostaje symbolicznie „wymazany” z rytuału. A w Mondstadzie, gdzie miłość traktuje się jak sport, to gorsze niż klątwa.",
-                    "sprite": "",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
                     "speaker": "Narrator",
                     "text": "Trafiasz do miasta na tydzień przed Festiwalem. Jesteś jak agent 007. Zero znajomości. Zero czasu do stracenia. Siedem dni na znalezienie osoby, która pójdzie z tobą na Festiwal.",
-                    "sprite": "",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
                     "speaker": "Narrator",
                     "text": "Jeśli chcesz wziąć udział w ceremonii — musisz zdobyć czyjeś zaufanie, zainteresowanie no i oczywiście - serce. A Mondstad nie ułatwia życia. Tu każde spotkanie może skończyć się pojedynkiem.",
-                    "sprite": "",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
                     "speaker": "Narrator",
                     "text": "W kawiarniach, na mostach, nawet w bibliotece — wszędzie odbywają się potyczki na spojrzenia, riposty i na miecze. Niektórzy szukają romansu. Inni rozrywki. Jeszcze inni — politycznego sojuszu lub czystej zemsty.",
-                    "sprite": "",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
                     "speaker": "Narrator",
                     "text": "A ty? Kim chcesz być?",
-                    "sprite": "",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
                     "speaker": "Narrator",
                     "text": "Masz siedem dni. Znajdź partnera. Przetrwaj słowne starcia. A być może… odkryj co skrywają zakamarki Mondstadu. Czas grać o serca i nie dać się złamać.",
-                    "sprite": "",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
                   "speaker": "Narrator",
                   "text": "Kto przykuje twoją uwagę?",
-                  "sprite": "",
+                  "sprite": "Narrator",
                   "background": "",
                   "choices": [
                   {
@@ -102,6 +197,10 @@
                   {
                       "text": "Widzisz Mężczyzne dźwigającego brzemie przeszłości, jego twarde spojrzenie nie pozwala ci oderwać wzroku",
                       "nextId": "hackathon_intro"
+                  },
+                  {
+                    "text": "Widzisz, że możesz przetestować walkę, i jak by mogła działać w skończonej grze.",
+                    "nextId": "debug"
                   }
                 ]
               }
@@ -176,7 +275,7 @@
                 {
                     "speaker": "Narrator",
                     "text": "Z cienia wyłania się postać w czarnym płaszczu.",
-                    "sprite": "syska_neutral",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
@@ -188,7 +287,7 @@
                 {
                     "speaker": "Karczmarka",
                     "text": "Co to za oszczerstwa! Piekłam je dziś rano!",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
@@ -200,7 +299,7 @@
                 {
                     "speaker": "Karczmarka",
                     "text": "Wypraszam sobie! Moje ciastka to dziedzictwo rodzinne! Przepis przekazywany od pokolenia do pokolenia, każda rodzynka błogosławiona przez duchy ciotek.",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
@@ -245,7 +344,7 @@
                 {
                     "speaker": "Karczmarka",
                     "text": "Nie pyskuj za dużo, elfko. Jeszcze ktoś pomyśli, że naprawdę tu pracujesz i zaczną cię pytać o menu.",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": "",
           "nextId": "end_scene"
                 }
@@ -349,7 +448,7 @@
                     "text": "Poetyckie. Choć niepraktyczne. Spróbuj kiedyś zamówić kawę bez podawania imienia — dramat przy ladzie gwarantowany.",
                     "sprite": "syska_sad",
                     "background": "",
-          "nextId": "end_scene"
+                    "nextId": "end_scene"
                 }
             ]
         },
@@ -357,21 +456,21 @@
             "id": "end_scene",
             "background": "inn_interior",
             "nextScene": "",
-            "lines": {
+            "lines": [{
                 "speaker": "Narrator",
                 "text": "Zjesz ciastko — smakuje... zaskakująco dobrze. Może nawet trochę magicznie? A może to po prostu głód pomieszał ci zmysły.",
                 "sprite": "Narrator",
                 "background": ""
+            },{
+                "speaker": "Syśka",
+                "text": "Uważaj. Karczma to tylko początek. Prawdziwe niebezpieczeństwo zaczyna się, gdy ktoś chce cię z niej wyciągnąć.",
+                "sprite": "syska_blush",
+                "background": "",
+          "nextId": "ranalac_1"
             }
+        ]
         },
-        {
-            "speaker": "Syśka",
-            "text": "Uważaj. Karczma to tylko początek. Prawdziwe niebezpieczeństwo zaczyna się, gdy ktoś chce cię z niej wyciągnąć.",
-            "sprite": "syska_blush",
-            "background": "",
-      "battle": "Syska1",
-      "nextId": "ranalac_1"
-        },
+        
         {
             "id": "ranalac_1",
             "background": "temple_courtyard_rain",
@@ -532,7 +631,6 @@
                     "text": "Cóż za widok — przypadkowy awanturnik, zagubiona księżniczka, księżyc w tle, jedno ciastko dzielone na pół, z cieniem uśmiechu i nutą ryzyka.",
                     "sprite": "Narrator",
                     "background": "",
-          "battle": "Syska2",
           "nextId": "monstad_library_1"
           
   
@@ -693,7 +791,6 @@
                     "text": "Książka wraca na regał. Syśka oddala się, a ty zostajesz w tej samej ciszy, która teraz zdaje się mieć nowy sens. Znajdujesz się w samym sercu biblioteki, wśród słów, które mogłyby stać się waszą wspólną historią.",
                     "sprite": "Narrator",
                     "background": "",
-                    "battle": "Syska3",
                     "nextId": "koniecDEMO"
                 },
                     {
@@ -719,7 +816,7 @@
                 {
                     "speaker": "Gnom",
                     "text": "Zostaw mnie! Jestem niewinny!",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
@@ -737,7 +834,7 @@
                 {
                     "speaker": "Gnom",
                     "text": "Puszczaj! Zgłoszę cię do straży! To przekroczenie uprawnień!",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
@@ -784,7 +881,7 @@
                 {
                     "speaker": "Gnom",
                     "text": "To są moje dowody smakowe! Wypiek babci, przysięgam na wszystko, co słodkie!",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
@@ -825,7 +922,7 @@
                 {
                     "speaker": "Gnom",
                     "text": "Witamy w klubie. Kto ma więcej niż trzy kradzieże, stawia dziś rundę!",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": "",
           "nextId": "eat_cookie"
                 }
@@ -857,9 +954,8 @@
                 {
                     "speaker": "Gnom",
                     "text": "Nie martw się, wrócę po swoje ciasteczka. On nie wie, że mam drugi zestaw kieszeni.",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": "",
-                    "battle": "Lance1",
                     "nextId": "monstad_1"
                 }
             ]
@@ -903,7 +999,6 @@
                     "text": "A ja mam nietolerancję na nierobów. Ale nie martw się — znam terapię. Nazywa się: łopata i dziesięć godzin kopania rowów!",
                     "sprite": "lance_sly",
                     "background": "",
-          "battle": "Lance1",
           "nextId": "monstad_1"
                 }
             ]
@@ -928,7 +1023,7 @@
                 {
                     "speaker": "Gnom",
                     "text": "TAK! KULTURA! CYWILIZACJA! ON ROZUMIE SMAK!",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
@@ -936,7 +1031,6 @@
                     "text": "Wiecie co? Mam już dość na dziś. Ten gnom pójdzie do lochu, ty — do książki rekordów za najbardziej brawurowe zjedzenie dowodu w historii Mondstadu.",
                     "sprite": "lance_sly",
                     "background": "",
-          "battle": "Lance1",
           "nextId": "monstad_1"
                 }
             ]
@@ -1101,7 +1195,6 @@
                     "text": "Zatrzymujecie się przy murze. Patrzycie na miasto. On — wciąż zbrojny. Ty — wciąż otwarty. I przez chwilę milczenie nie boli. Jest czymś wspólnym.",
                     "sprite": "Narrator",
                     "background": "",
-          "battle": "Lance2",
           "nextId": "flower_market_1"
                 }
             ]
@@ -1126,7 +1219,7 @@
                 {
                     "speaker": "Sprzedawczyni",
                     "text": "No dalej, kochanieńki. Nie stój tak, jakbyś miał za chwilę złożyć przysięgę śmierci. Kwiaty są dla żywych!",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
@@ -1237,7 +1330,7 @@
                 {
                     "speaker": "Sprzedawczyni",
                     "text": "Niech będzie na próbę, rycerzyku. Ale jeśli nie wrócisz z nowym uśmiechem na twarzy, to mi te kwiaty zwrócisz, rozumiesz?",
-                    "sprite": "NPC",
+                    "sprite": "Narrator",
                     "background": ""
                 },
                 {
@@ -1284,7 +1377,6 @@
                     "text": "Kwiaty trafiają w twoje ręce, a Lance, choć nieśmiały, oddala się z uśmiechem. Powietrze wokół was jest teraz pełne obietnic, jak zapach tych księżycowych róż.",
                     "sprite": "Narrator",
                     "background": "",
-                    "battle": "Lance3",
                     "nextId": "koniecDEMO"
                 },
                     {

@@ -8,5 +8,6 @@ public class DialogueLine
     public string sprite;
     public string background;
     public string battle; //Wheter to battle after choice
+    public string nextId;
     public Choice[] choices;     // <— new
 }
