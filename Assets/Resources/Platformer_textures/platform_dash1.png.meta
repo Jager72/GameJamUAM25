@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7c1f48a58fbb7ac4f828c3704ff027b5
+guid: cb8a85740fea6084da9de64bc8e64575
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1632319744286819198
-    second: syska_angry_0
+      213: 6954524192651472080
+    second: platform_dash1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 96
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: syska_angry_0
+      name: platform_dash1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
+        width: 96
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28c7de947d5d859e0800000000000000
-      internalID: -1632319744286819198
+      spriteID: 0dce9d418ee638060800000000000000
+      internalID: 6954524192651472080
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      syska_angry_0: -1632319744286819198
+      platform_dash1_0: 6954524192651472080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
