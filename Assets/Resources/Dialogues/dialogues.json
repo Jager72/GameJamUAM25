@@ -13,7 +13,7 @@
             },
             {
               "speaker": "Narrator",
-              "text": "Wybór Klepa",
+              "text": "Prototyp Walki",
               "sprite": "Narrator",
               "background": "",
               "choices": [
@@ -50,7 +50,7 @@
             },
             {
                 "speaker": "Narrator",
-                "text": "Wybór Klepa",
+                "text": "Prototyp Walki",
                 "sprite": "Narrator",
                 "background": "",
                 "battle": "Lance1",
@@ -71,7 +71,7 @@
             },
             {
                 "speaker": "Narrator",
-                "text": "Wybór Klepa",
+                "text": "Prototyp Walki",
                 "sprite": "Narrator",
                 "background": "",
                 "battle": "Lance2",
@@ -92,7 +92,7 @@
             },
             {
                 "speaker": "Narrator",
-                "text": "Wybór Klepa",
+                "text": "Prototyp Walki",
                 "sprite": "Narrator",
                 "background": "",
                 "battle": "Syska1",
@@ -113,7 +113,7 @@
             },
             {
                 "speaker": "Narrator",
-                "text": "Wybór Klepa",
+                "text": "Prototyp Walki",
                 "sprite": "Narrator",
                 "background": "",
                 "battle": "Syska3",
@@ -822,7 +822,7 @@
                 {
                     "speaker": "Rycerz",
                     "text": "Stać! Na Boga — oddaj, co ukradłeś, zanim zarobisz kilka ciosów",
-                    "sprite": "lance_angry",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -846,7 +846,7 @@
                 {
                     "speaker": "Rycerz",
                     "text": "Odsunąć się, bo ten złodziejaszek nie będzie jedynym, który dzisiaj trafi na dołek",
-                    "sprite": "lance_sly",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -875,7 +875,7 @@
                 {
                     "speaker": "Rycerz",
                     "text": "Pozbieraj je, ale mam cię na oku. Nie myśl, że nie zauważę, jeśli któraś trafi do twojej kieszeni.",
-                    "sprite": "lance_neutral",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -910,7 +910,7 @@
                 {
                     "speaker": "Rycerz",
                     "text": "Ruszaj się jeszcze raz w ten sposób, a oberwiesz łokciem w sumienie.",
-                    "sprite": "lance_angry",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -936,7 +936,7 @@
                 {
                     "speaker": "Rycerz",
                     "text": "Dziękuję… Rzadko ktoś pomaga, nie próbując od razu zostać baronem moralności. Masz imię?",
-                    "sprite": "lance_neutral",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -948,7 +948,7 @@
                 {
                     "speaker": "Rycerz",
                     "text": "Niech będzie. A więc dziś nie idziesz do lochu. To całkiem niezły start w Mondstadzie.",
-                    "sprite": "lance_sly",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -968,7 +968,7 @@
                 {
                     "speaker": "Rycerz",
                     "text": "Hej ty! Nie gap się tak, lepiej pomóż mi pozbierać te wszystkie skarby, i nie myśl, że nie zauważę jeśli coś zniknie",
-                    "sprite": "lance_angry",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -997,7 +997,7 @@
                 {
                     "speaker": "Rycerz",
                     "text": "A ja mam nietolerancję na nierobów. Ale nie martw się — znam terapię. Nazywa się: łopata i dziesięć godzin kopania rowów!",
-                    "sprite": "lance_sly",
+                    "sprite": "pixel_lance",
                     "background": "",
           "nextId": "monstad_1"
                 }
@@ -1017,7 +1017,7 @@
                 {
                     "speaker": "Rycerz",
                     "text": "Czy… właśnie… zjadłeś DOWÓD?",
-                    "sprite": "lance_amazed",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1029,7 +1029,7 @@
                 {
                     "speaker": "Rycerz",
                     "text": "Wiecie co? Mam już dość na dziś. Ten gnom pójdzie do lochu, ty — do książki rekordów za najbardziej brawurowe zjedzenie dowodu w historii Mondstadu.",
-                    "sprite": "lance_sly",
+                    "sprite": "pixel_lance",
                     "background": "",
           "nextId": "monstad_1"
                 }
@@ -1055,7 +1055,7 @@
                 {
                     "speaker": "Lance",
                     "text": "Miasto śpi. Potwory też. Zaczynam się niepokoić.",
-                    "sprite": "lance_neutral",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1088,7 +1088,7 @@
                 {
                     "speaker": "Lance",
                     "text": "Nie jestem poetą. I rzadko się nadaję do romantyzowania. Ale rozumiem potrzebę żartu. To ludzka broń. Skuteczna. Czasem… bezlitosna.",
-                    "sprite": "lance_sad",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1121,7 +1121,7 @@
                 {
                     "speaker": "Lance",
                     "text": "(Trochę milczy. Jakby rozważał, czy jesteś żartem, czy niebezpiecznym zaklęciem.) Nie jestem celem. Jestem tarczą. I nie wiem, czy to dobrze… że próbujesz się do niej przytulić.",
-                    "sprite": "lance_sad",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1154,7 +1154,7 @@
                 {
                     "speaker": "Lance",
                     "text": "(odwraca wzrok, ale nie odchodzi) Nie potrzebuję litości. Ale… Czasem dobrze wiedzieć, że ktoś się zatrzymał. Że ktoś… widzi.",
-                    "sprite": "lance_blush",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1187,7 +1187,7 @@
                 {
                     "speaker": "Lance",
                     "text": "(półszeptem) Może to nie ty masz się bać o mnie. Może to ja boję się… że nie zasługuję na to, co przynosisz.",
-                    "sprite": "lance_blush",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1225,7 +1225,7 @@
                 {
                     "speaker": "Lance",
                     "text": "Nie wiem, co… pasuje. To dla kogoś, kto... Nie jestem dobry w takich rzeczach.",
-                    "sprite": "Lance",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1258,7 +1258,7 @@
                 {
                     "speaker": "Lance",
                     "text": "(odwraca się gwałtownie, lekko zaskoczony — ale nie zdenerwowany) Nie powiem, że dla ciebie. Bo wtedy... powiesz coś zabawnego i rozbroisz mnie całkowicie.",
-                    "sprite": "lance_blush",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1291,7 +1291,7 @@
                 {
                     "speaker": "Lance",
                     "text": "(ledwo zauważalny uśmiech, który mógłby wywołać małe trzęsienie ziemi w sercu kogoś mniej odpornie romantycznego) Jesteś… jak ten targ. Za dużo zapachów, za dużo kolorów, za dużo do ogarnięcia. Ale nie mogę się od ciebie odsunąć.",
-                    "sprite": "lance_sly",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1324,7 +1324,7 @@
                 {
                     "speaker": "Lance",
                     "text": "(cicho, prawie nieśmiało) Może nie znam się na kwiatach. Ale wiem, kiedy coś — lub ktoś — nie chce odejść z moich myśli.",
-                    "sprite": "lance_sad",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1336,7 +1336,7 @@
                 {
                     "speaker": "Lance",
                     "text": "Proszę. Nie wiem, czy potrafię mówić tak pięknie jak te kwiaty pachną. Ale chciałem, żebyś wiedziała, że jesteś dla mnie czymś więcej… niż tylko chwilą przed walką.",
-                    "sprite": "lance_blush",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
@@ -1369,7 +1369,7 @@
                 {
                     "speaker": "Lance",
                     "text": "(uśmiecha się delikatnie, a bukiet wciąż w jego ręce) Czasami słowa to za mało, żeby powiedzieć, co się czuje. Ale liczę, że te kwiaty będą mówiły za mnie.",
-                    "sprite": "lance_blush",
+                    "sprite": "pixel_lance",
                     "background": ""
                 },
                 {
